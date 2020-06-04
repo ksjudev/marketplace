@@ -5,1696 +5,1271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MartPlace</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="header__top-inner">
-                    <div class="header__logo">
-                        <a href="#">
-                            <img src="images/header/logo.png" alt="logo">
-                        </a>
-                    </div>
-                    <div class="header__top-inner header__top-content">
-                        <a href="#" class="header__btn">Become a Seller</a>
-                        <div class="header__notification">
-                            <a class="header__notification-alarm" href="#">
-                                <div class="header__badge header__badge-alarm">25</div>
+    <div class="wrapper">
+        <div class="content page-content">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-inner">
+                            <a href="#" class="header__logo">
+                                <img src="images/header/logo.png" alt="logo">
                             </a>
-                            <a class="header__notification-envelope" href="#">
-                                <div class="header__badge header__badge-envelope">6</div>
-                            </a>
-                            <a class="header__notification-cart" href="#">
-                                <div class="header__badge header__badge-cart">2</div>
-                            </a>
-                        </div>
-                        <a href="#" class="header__user">
-                            <div class="header__user-img" style="background-image: url(images/header/avatar.jpg);">
-                            </div>
-                            <div class="header__user-details">
-                                <div class="user__name"> Taofiq Hakim</div>
-
-                                <div class="user__balance">
-                                    $20.45
+                            <div class="header__top-inner">
+                                <a href="#" class="header__btn">Become a Seller</a>
+                                <div class="header__notifications">
+                                    <a class="header__notification header__notification--alarm" href="#">
+                                        <div class="header__badge header__badge--red">25</div>
+                                    </a>
+                                    <a class="header__notification header__notification--envelope" href="#">
+                                        <div class="header__badge header__badge--green">6</div>
+                                    </a>
+                                    <a class="header__notification header__notification--cart" href="#">
+                                        <div class="header__badge header__badge--blue">2</div>
+                                    </a>
                                 </div>
+                                <a href="#" class="header__user">
+                                    <div class="header__user-img" style="background-image: url(images/header/avatar.jpg);">
+                                    </div>
+                                    <div class="header__user-details">
+                                        <div class="header__user-name"> Taofiq Hakim</div>
+                                        <div class="header__user-balance">$20.45</div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="header__menu">
-            <div class="container">
-                <div class="header__menu-inner">
-                    <nav class="menu__nav">
-                        <ul class="menu__nav-list">
-                            <li>
-                                <a href="#">
-                                    home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    all products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    wordpress
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    festures
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    pages
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <form class="menu__nav-search">
-                        <input type="text" placeholder="Search product here..." required>
-                        <button class="search__btn" type="submit"></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="products">
-        <div class="products__create">
-            <div class="container">
-                <div class="products__create-inner">
-                    <div class="products__title">
-                        <div> Create Your Own</div>
-                        <span>Digital Product Marketplace</span>
-                    </div>
-                    <div class="products__text">
-                        MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-                    </div>
-                    <div class="products__btn">
-                        <a href="#" class="products__btn btn__all">View All Products</a>
-                        <a href="#" class="products__create-btn btn__popular">Popular Products</a>
+                <div class="header__menu">
+                    <div class="container">
+                        <div class="header__menu-inner">
+                            <nav class="header__menu-nav">
+                                <ul class="header__menu-list">
+                                    <li class="header__list">
+                                        <a class="header__list-link" href="#">
+                                            home
+                                        </a>
+                                    </li>
+                                    <li class="header__list">
+                                        <a class="header__list-link" href="#">
+                                            all products
+                                        </a>
+                                    </li>
+                                    <li class="header__list">
+                                        <a class="header__list-link" href="#">
+                                            wordpress
+                                        </a>
+                                    </li>
+                                    <li class="header__list">
+                                        <a class="header__list-link" href="#">
+                                            festures
+                                        </a>
+                                    </li>
+                                    <li class="header__list">
+                                        <a class="header__list-link" href="#">
+                                            pages
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <form class="header__menu-form">
+                                <input class="header__menu-search" type="search" name="q" placeholder="Search product here...">
+                                <button class="header__menu-btn" type="submit"></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="products__search">
-            <div class="container">
-                <div class="products__search-inner">
-                    <div class="products__search-level1">
-                        <form>
-                            <input type="text" placeholder="Search your products..." required>
-                            <div class="products__search-categories">
-                                <select>
+            </header>
+            <section class="products">
+                <div class="products__create">
+                    <div class="container">
+                        <div class="products__create-inner">
+                            <div class="products__title">
+                                Create Your Own
+                            </div>
+                            <div class="products__title products__title--bold">
+                                Digital Product Marketplace
+                            </div>
+                            <div class="products__text">
+                                MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+                            </div>
+                            <div class="products__btn">
+                                <a class="products__btn-link" href="#">View All Products</a>
+                                <a class="products__btn-link" href="#">Popular Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__search">
+                    <div class="container">
+                        <div class="products__search-inner">
+                            <form class="products__search-form">
+                                <input class="products__search-input" type="search" name="q" placeholder="Search your products...">
+                                <select class="products__search-categories">
                                     <option>All Categories</option>
                                     <option>Featured Products</option>
                                     <option>New Products</option>
                                 </select>
-                            </div>
-                        </form>
-                        <button class="products__search-btn" type="submit">
-                            Search Now
-                        </button>
-                    </div>
-                    <div class="products__search-level2"></div>
-                    <div class="products__search-level3"></div>
-                </div>
-            </div>
-        </div>
-        <div class="products__info">
-            <div class="container">
-                <div class="products__info-items">
-                    <div class="products__info-item">
-                        <a href="#">
-                            <img src="images/products_section/item1.jpg" alt="book">
-                        </a>
-                        <div class="products__info-title">
-                            Best UX Research
-                        </div>
-                        <div class="products__info-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                    <div class="products__info-item">
-                        <a href="#">
-                            <img src="images/products_section/item2.jpg" alt="table">
-                        </a>
-                        <div class="products__info-title">
-                            Fully Responsive
-                        </div>
-                        <div class="products__info-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                    <div class="products__info-item">
-                        <a href="#">
-                            <img src="images/products_section/item3.jpg" alt="phone">
-                        </a>
-                        <div class="products__info-title">
-                            Buy & Sell Easily
-                        </div>
-                        <div class="products__info-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="featured__products">
-        <div class="container">
-            <div class="featured__products-slider">
-                <div class="slider__top">
-                    <div class="slider__top-title">
-                        Weekly Featured Products
-                    </div>
-                    <div class="slider__top-arrows">
-                        <button type="button" class="slick-prev-featured"></button>
-                        <button type="button" class="slick-next-featured"></button>
-                    </div>
-                </div>
-                <div class="slider__inner">
-                    <div class="slider__inner-wrapper">
-                        <a href="#" class="slider__inner-image">
-                            <img src="images/featured_products/image1.jpg" alt="image">
-                        </a>
-                        <div class="slider__inner-content">
-                            <a href="#" class="slider__inner-title">
-                                One Page Resume Template
-                            </a>
-                            <div class="slider__inner-info">
-                                <div class="info__user">
-                                    <a href="#" class="user__avatar">
-                                        <div class="user__img" style="background-image: url(images/header/avatar.jpg);">
-                                        </div>
-                                        <span class="user__name">AazzTech</span>
-                                    </a>
-                                </div>
-                                <div class="info__type">
-                                    <a href="#" class="type__avatar">
-                                        <div class="type__image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
-                                        </div>
-                                        <span>WordPress</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slider__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            </div>
-                            <ul class="slider__inner-tag">
-                                <li>website</li>
-                                <li>plugin</li>
-                                <li>landing page</li>
-                            </ul>
-                            <div class="slider__inner-bottom">
-                                <div class="bottom__info">
-                                    <div class="botton__info-left">
-                                        <a href="#" class="price-range-btn">
-                                            $10 - $50
-                                        </a>
-                                        <div class="slider__like">
-                                            <span class="number">46</span>
-                                        </div>
-                                        <div class="slider__cart">
-                                            <span class="number">634</span>
-                                        </div>
-                                    </div>
-                                    <div class="slider__rate">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <g>
-                                                <rect fill="none" height="24" width="24" x="0" />
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <g>
-                                                        <path
-                                                            d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider__inner-wrapper">
-                        <a href="#" class="slider__inner-image">
-                            <img src="images/featured_products/image1.jpg" alt="image">
-                        </a>
-                        <div class="slider__inner-content">
-                            <a href="#" class="slider__inner-title">
-                                One Page Resume Template
-                            </a>
-                            <div class="slider__inner-info">
-                                <div class="info__user">
-                                    <a href="#" class="user__avatar">
-                                        <div class="user__img" style="background-image: url(images/header/avatar.jpg);">
-                                        </div>
-                                        <span class="user__name">AazzTech</span>
-                                    </a>
-                                </div>
-                                <div class="info__type">
-                                    <a href="#" class="type__avatar">
-                                        <div class="type__image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
-                                        </div>
-                                        <span>WordPress</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slider__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            </div>
-                            <ul class="slider__inner-tag">
-                                <li>website</li>
-                                <li>plugin</li>
-                                <li>landing page</li>
-                            </ul>
-                            <div class="slider__inner-bottom">
-                                <div class="bottom__info">
-                                    <div class="botton__info-left">
-                                        <a href="#" class="price-range-btn">
-                                            $10 - $50
-                                        </a>
-                                        <div class="slider__like">
-
-                                            <span class="number">46</span>
-                                        </div>
-                                        <div class="slider__cart">
-
-                                            <span class="number">634</span>
-                                        </div>
-                                    </div>
-                                    <div class="slider__rate">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <g>
-                                                <rect fill="none" height="24" width="24" x="0" />
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <g>
-                                                        <path
-                                                            d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="release__products">
-        <div class="container">
-            <div class="release__products-filter">
-                <div class="filter__title">Newest Release Products</div>
-                <div class="filter__right">
-                    <div class="filter__item">Filter by:</div>
-                    <div class="filter__choice">
-                        <img src="images/release_products/point.png" alt="filter">
-                        <ul class="filter__choice-list">
-                            <li>
-                                <a href="#">Trending Items</a>
-                            </li>
-                            <li>
-                                <a href="#">Best seller</a>
-                            </li>
-                            <li>
-                                <a href="#">Best rating</a>
-                            </li>
-                            <li>
-                                <a href="#">Low price</a>
-                            </li>
-                            <li>
-                                <a href="#">High price</a>
-                            </li>
-                        </ul>
-                        <img class="filter__choice-polygon" src="images/release_products/Polygon.svg" alt="polygon">
-                    </div>
-                </div>
-            </div>
-            <div class="release__products-btn">
-                <button type="button" data-filter=".category-plugin" class="mixitup-control-active">Plugins</button>
-                <button type="button" data-filter=".category-wordpress">WordPress</button>
-                <button type="button" data-filter=".category-sitetemplate">Site Template</button>
-                <button type="button" data-filter=".category-psd">PSD Template</button>
-                <button type="button" data-filter=".category-joomla">Joomla</button>
-                <button type="button" data-filter=".category-userinterface">User Interface</button>
-                <button type="button" data-filter=".category-software">Landing Page</button>
-                <button type="button" data-filter=".category-software">Software</button>
-            </div>
-            <div class="release__products-items">
-                <div class="release__products-item mix category-plugin category-new" data-order="1">
-                    <div class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        <div class="item__image-hover">
-                            <a class="item__image-info" href="#">More Info</a>
-                            <a class="item__image-demo" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="item__inner">
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                E-commerce Shopping Cart
-                            </div>
-                            <div class="item__inner-info">
-                                <div class="info__user">
-                                    <a href="#" class="user__avatar">
-                                        <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                        </div>
-                                        <span class="user__name">Theme-Valley</span>
-                                    </a>
-                                    <a href="#" class="type__tag">
-                                        <div class="type__image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
-                                        </div>
-                                        <span>Plugin</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__info">
-                                <div class="bottom__info-left">
-                                    <a href="#" class="bottom__info-btn">
-                                        $20
-                                    </a>
-                                    <div class="bottom__info-like">
-                                        90
-                                    </div>
-                                </div>
-                                <div class="bottom__info-cart">246</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="release__products-item mix category-psd category-new" data-order="2">
-                    <div class="item__image" style="background-image: url(images/release_products/blue.jpg);">
-                        <div class="item__image-hover">
-                            <a class="item__image-info" href="#">More Info</a>
-                            <a class="item__image-demo" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="item__inner">
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                Marketify Coffee Shop
-                            </div>
-                            <div class="item__inner-info">
-                                <div class="info__user">
-                                    <a href="#" class="user__avatar">
-                                        <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                        </div>
-                                        <span class="user__name">EchoTheme</span>
-                                    </a>
-                                    <a href="#" class="type__tag">
-                                        <div class="type__image" style="background-image: url(images/featured_products/psd.svg);"></div>
-                                        <span>PSD</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__info">
-                                <div class="bottom__info-left">
-                                    <a href="#" class="bottom__info-btn">
-                                        $18
-                                    </a>
-                                    <div class="bottom__info-like">
-                                        48
-                                    </div>
-                                </div>
-                                <div class="bottom__info-cart">
-                                    50
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="release__products-item mix category-html category-new" data-order="3">
-                    <div class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        <div class="item__image-hover">
-                            <a class="item__image-info" href="#">More Info</a>
-                            <a class="item__image-demo" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="item__inner">
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                Bryson - Portfolio Template
-                            </div>
-                            <div class="item__inner-info">
-                                <div class="info__user">
-                                    <a href="#" class="user__avatar">
-                                        <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                        </div>
-                                        <span class="user__name">Artcorner</span>
-                                    </a>
-                                    <a href="#" class="type__tag">
-                                        <div class="type__image" style="background-image: url(images/featured_products/html.png);"></div>
-                                        <span>HTML</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__info">
-                                <div class="bottom__info-left">
-                                    <a href="#" class="bottom__info-btn">
-                                        $10
-                                    </a>
-                                    <div class="bottom__info-like">
-                                        56
-                                    </div>
-                                    <div class="bottom__info-rate">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <g>
-                                                <rect fill="none" height="24" width="24" x="0" />
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <g>
-                                                        <path
-                                                            d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="bottom__info-cart">
-                                    68
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="release__products-item mix category-plugin category-new" data-order="4">
-                    <div class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        <div class="item__image-hover">
-                            <a class="item__image-info" href="#">More Info</a>
-                            <a class="item__image-demo" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="item__inner">
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                E-commerce Shopping Cart
-                            </div>
-                            <div class="item__inner-info">
-                                <div class="info__user">
-                                    <a href="#" class="user__avatar">
-                                        <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                        </div>
-                                        <span class="user__name">Design-Hub</span>
-                                    </a>
-                                    <a href="#" class="type__tag">
-                                        <div class="type__image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
-                                        </div>
-                                        <span>Plugin</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__info">
-                                <div class="bottom__info-left">
-                                    <a href="#" class="bottom__info-btn">
-                                        $10 - 50
-                                    </a>
-                                    <div class="bottom__info-like">
-                                        90
-                                    </div>
-                                </div>
-                                <div class="bottom__info-rate">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                        <g>
-                                            <rect fill="none" height="24" width="24" x="0" />
-                                        </g>
-                                        <g>
-                                            <g>
-                                                <g>
-                                                    <path
-                                                        d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="bottom__info-cart">
-                                    45</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="release__products-item mix category-psd category-new" data-order="5">
-                    <div class="item__image" style="background-image: url(images/release_products/blue.jpg);">
-                        <div class="item__image-hover">
-                            <a class="item__image-info" href="#">More Info</a>
-                            <a class="item__image-demo" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="item__inner">
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                Marketify Coffee Shop
-                            </div>
-                            <div class="item__inner-info">
-                                <div class="info__user">
-                                    <a href="#" class="user__avatar">
-                                        <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                        </div>
-                                        <span class="user__name">AazzTech</span>
-                                    </a>
-                                    <a href="#" class="type__tag">
-                                        <div class="type__image" style="background-image: url(images/featured_products/psd.svg);"></div>
-                                        <span>PSD</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__info">
-                                <div class="bottom__info-left">
-                                    <a href="#" class="bottom__info-btn">
-                                        $10 - 50
-                                    </a>
-                                    <div class="bottom__info-like">
-                                        48
-                                    </div>
-                                </div>
-                                <div class="bottom__info-cart">
-                                    50
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="release__products-item mix category-html category-new" data-order="3">
-                    <div class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        <div class="item__image-hover">
-                            <a class="item__image-info" href="#">More Info</a>
-                            <a class="item__image-demo" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="item__inner">
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                Bryson - Portfolio Template
-                            </div>
-                            <div class="item__inner-info">
-                                <div class="info__user">
-                                    <a href="#" class="user__avatar">
-                                        <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                        </div>
-                                        <span class="user__name">Coder-Lab</span>
-                                    </a>
-                                    <a href="#" class="type__tag">
-                                        <div class="type__image" style="background-image: url(images/featured_products/html.png);"></div>
-                                        <span>HTML</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__info">
-                                <div class="bottom__info-left">
-                                    <a href="#" class="bottom__info-btn">
-                                        $10
-                                    </a>
-                                    <div class="bottom__info-like">
-                                        56
-                                    </div>
-                                    <div class="bottom__info-rate">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <g>
-                                                <rect fill="none" height="24" width="24" x="0" />
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <g>
-                                                        <path
-                                                            d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="bottom__info-cart">
-                                    68
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="release__products-button">
-                <button type="button" data-filter=".category-new">All New Products</button>
-            </div>
-        </div>
-    </section>
-    <section class="followers">
-        <div class="container">
-            <div class="followers__slider">
-                <div class="slider__top">
-                    <div class="slider__top-title">
-                        Your Followers Feed
-                    </div>
-                    <div class="slider__top-arrows">
-                        <button type="button" class="slick-prev"></button>
-                        <button type="button" class="slick-next"></button>
-                    </div>
-                </div>
-                <div class="slider__items">
-
-                    <div class="slider__item">
-                        <a href="#" class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        </a>
-                        <div class="item__inner">
-                            <div class="item__inner-top">
-                                <div class="item__inner-title">
-                                    E-commerce Shopping Cart
-                                </div>
-                                <div class="item__inner-info">
-                                    <div class="info__user">
-                                        <a href="#" class="user__avatar">
-                                            <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                            </div>
-                                            <span class="user__name">Theme-Valley</span>
-                                        </a>
-                                        <a href="#" class="type__tag">
-                                            <div class="type__image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
-                                            </div>
-                                            <span>Plugin</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item__inner-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="item__inner-bottom">
-                                <div class="bottom__info">
-                                    <div class="bottom__info-left">
-                                        <a href="#" class="bottom__info-btn">
-                                            $20
-                                        </a>
-                                        <div class="bottom__info-like">
-                                            90
-                                        </div>
-                                        <div class="bottom__info-rate">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <g>
-                                                    <rect fill="none" height="24" width="24" x="0" />
-                                                </g>
-                                                <g>
-                                                    <g>
-                                                        <g>
-                                                            <path
-                                                                d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="bottom__info-cart">
-                                        246
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slider__item">
-                        <a href="#" class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        </a>
-                        <div class="item__inner">
-                            <div class="item__inner-top">
-                                <div class="item__inner-title">
-                                    Marketify Coffee Shop
-                                </div>
-                                <div class="item__inner-info">
-                                    <div class="info__user">
-                                        <a href="#" class="user__avatar">
-                                            <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                            </div>
-                                            <span class="user__name">EchoTheme</span>
-                                        </a>
-                                        <a href="#" class="type__tag">
-                                            <div class="type__image" style="background-image: url(images/featured_products/psd.svg);"></div>
-                                            <span>PSD</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item__inner-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="item__inner-bottom">
-                                <div class="bottom__info">
-                                    <div class="bottom__info-left">
-                                        <a href="#" class="bottom__info-btn">
-                                            $18
-                                        </a>
-                                        <div class="bottom__info-like">
-                                            48
-                                        </div>
-                                    </div>
-                                    <div class="bottom__info-cart">
-                                        50
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slider__item">
-                        <a href="#" class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        </a>
-                        <div class="item__inner">
-                            <div class="item__inner-top">
-                                <div class="item__inner-title">
-                                    Bryson - Portfolio Template
-                                </div>
-                                <div class="item__inner-info">
-                                    <div class="info__user">
-                                        <a href="#" class="user__avatar">
-                                            <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                            </div>
-                                            <span class="user__name">Artcorner</span>
-                                        </a>
-                                        <a href="#" class="type__tag">
-                                            <div class="type__image" style="background-image: url(images/featured_products/html.png);"></div>
-                                            <span>HTML</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item__inner-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="item__inner-bottom">
-                                <div class="bottom__info">
-                                    <div class="bottom__info-left">
-                                        <a href="#" class="bottom__info-btn">
-                                            $10
-                                        </a>
-                                        <div class="bottom__info-like">
-                                            56
-                                        </div>
-                                        <div class="bottom__info-rate">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <g>
-                                                    <rect fill="none" height="24" width="24" x="0" />
-                                                </g>
-                                                <g>
-                                                    <g>
-                                                        <g>
-                                                            <path
-                                                                d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="bottom__info-cart">
-                                        68
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slider__item">
-                        <a href="#" class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        </a>
-                        <div class="item__inner">
-                            <div class="item__inner-top">
-                                <div class="item__inner-title">
-                                    E-commerce Shopping Cart
-                                </div>
-                                <div class="item__inner-info">
-                                    <div class="info__user">
-                                        <a href="#" class="user__avatar">
-                                            <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                            </div>
-                                            <span class="user__name">Design-Hub</span>
-                                        </a>
-                                        <a href="#" class="type__tag">
-                                            <div class="type__image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
-                                            </div>
-                                            <span>Plugin</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item__inner-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="item__inner-bottom">
-                                <div class="bottom__info">
-                                    <div class="bottom__info-left">
-                                        <a href="#" class="bottom__info-btn">
-                                            $10 - 50
-                                        </a>
-                                        <div class="bottom__info-like">
-                                            90
-                                        </div>
-                                    </div>
-                                    <div class="bottom__info-rate">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                            <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                            <g>
-                                                <rect fill="none" height="24" width="24" x="0" />
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <g>
-                                                        <path
-                                                            d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <div class="bottom__info-cart">
-                                        45
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slider__item">
-                        <a href="#" class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        </a>
-                        <div class="item__inner">
-                            <div class="item__inner-top">
-                                <div class="item__inner-title">
-                                    Marketify Coffee Shop
-                                </div>
-                                <div class="item__inner-info">
-                                    <div class="info__user">
-                                        <a href="#" class="user__avatar">
-                                            <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                            </div>
-                                            <span class="user__name">AazzTech</span>
-                                        </a>
-                                        <a href="#" class="type__tag">
-                                            <div class="type__image" style="background-image: url(images/featured_products/psd.svg);"></div>
-                                            <span>PSD</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item__inner-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="item__inner-bottom">
-                                <div class="bottom__info">
-                                    <div class="bottom__info-left">
-                                        <a href="#" class="bottom__info-btn">
-                                            $10 - 50
-                                        </a>
-                                        <div class="bottom__info-like">
-                                            48
-                                        </div>
-                                    </div>
-                                    <div class="bottom__info-cart">
-                                        50
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slider__item">
-                        <a href="#" class="item__image" style="background-image: url(images/release_products/green.jpg);">
-                        </a>
-                        <div class="item__inner">
-                            <div class="item__inner-top">
-                                <div class="item__inner-title">
-                                    Bryson - Portfolio Template
-                                </div>
-                                <div class="item__inner-info">
-                                    <div class="info__user">
-                                        <a href="#" class="user__avatar">
-                                            <div class="user__img" style="background-image: url(images/release_products/avatar.jpg);">
-                                            </div>
-                                            <span class="user__name">Coder-Lab</span>
-                                        </a>
-                                        <a href="#" class="type__tag">
-                                            <div class="type__image" style="background-image: url(images/featured_products/html.png);"></div>
-                                            <span>HTML</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item__inner-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="item__inner-bottom">
-                                <div class="bottom__info">
-                                    <div class="bottom__info-left">
-                                        <a href="#" class="bottom__info-btn">
-                                            $10
-                                        </a>
-                                        <div class="bottom__info-like">
-                                            56
-                                        </div>
-                                        <div class="bottom__info-rate">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <path d="M0 0h24v24H0z" fill="none" />
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                <path d="M0 0h24v24H0z" fill="none" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
-                                                <g>
-                                                    <rect fill="none" height="24" width="24" x="0" />
-                                                </g>
-                                                <g>
-                                                    <g>
-                                                        <g>
-                                                            <path
-                                                                d="M22,9.24l-7.19-0.62L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27L18.18,21l-1.63-7.03L22,9.24z M12,15.4V6.1 l1.71,4.04l4.38,0.38l-3.32,2.88l1,4.28L12,15.4z" />
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="bottom__info-cart">
-                                        68
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="summary">
-        <div class="container">
-            <div class="summary__items">
-                <div class="summary_item">
-                    <div class="summary__img summary__img-briefcase"></div>
-                    <div class="summary__amount summary__amount-sale">
-                        38,436
-                    </div>
-                    <div class="summary__text">items for sale</div>
-                </div>
-                <div class="summary_item">
-                    <div class="summary__img summary__img-cloud-download"></div>
-                    <div class="summary__amount summary__amount-total">
-                        3,736
-                    </div>
-                    <div class="summary__text">total sales</div>
-                </div>
-                <div class="summary_item">
-                    <div class="summary__img summary__img-smile"></div>
-                    <div class="summary__amount summary__amount-happy">
-                        2,736
-                    </div>
-                    <div class="summary__text">happy customers</div>
-                </div>
-                <div class="summary_item">
-                    <div class="summary__img summary__img-users"></div>
-                    <div class="summary__amount summary__amount-member">
-                        25,736
-                    </div>
-                    <div class="summary__text">members</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="reason">
-        <div class="container">
-            <div class="reason__inner">
-                <div class="reason__title">
-                    Why Choose
-                    <span>MartPlace</span>
-                </div>
-                <div class="reason__text">
-                    Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
-                </div>
-                <div class="reason__items">
-                    <div class="reason__item">
-                        <div class="reason__item-number">01</div>
-                        <a class="reason__img reason__img-license" href="#"></a>
-                        <div class="reason__item-title">
-                            One Time Payment
-                        </div>
-                        <div class="reason__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                    <div class="reason__item">
-                        <div class="reason__item-number">02</div>
-                        <a class="reason__img reason__img-magic-wand" href="#"></a>
-                        <div class="reason__item-title">
-                            Quality Products
-                        </div>
-                        <div class="reason__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                    <div class="reason__item">
-                        <div class="reason__item-number">03</div>
-                        <a class="reason__img reason__img-lock" href="#"></a>
-                        <div class="reason__item-title">
-                            100% Secure Payment
-                        </div>
-                        <div class="reason__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                    <div class="reason__item">
-                        <div class="reason__item-number">04</div>
-                        <a class="reason__img reason__img-chart-bars" href="#"></a>
-                        <div class="reason__item-title">
-                            Well Organized Code
-                        </div>
-                        <div class="reason__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                    <div class="reason__item">
-                        <div class="reason__item-number">05</div>
-                        <a class="reason__img reason__img-leaf" href="#"></a>
-                        <div class="reason__item-title">
-                            Life Time Free Update
-                        </div>
-                        <div class="reason__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                    <div class="reason__item">
-                        <div class="reason__item-number">06</div>
-                        <a class="reason__img reason__img-phone" href="#"></a>
-                        <div class="reason__item-title">
-                            Fast and Friendly Support
-                        </div>
-                        <div class="reason__item-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="shopping">
-        <div class="shopping__sell" style="background-image: url(images/shopping/bgblue.png);">
-            <div class="shopping__sell-icon">
-                <img src="images/shopping/iconsell.svg" alt="sell">
-            </div>
-            <div class="shopping__title">
-                Sell Your Products
-            </div>
-            <div class="shopping__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diamcongue is laoreet elit metus.
-            </div>
-            <a href="" class="shopping__btn shopping__btn-sell">
-                Become an Author
-            </a>
-        </div>
-        <div class="shopping__buy" style="background-image: url(images/shopping/bgviolet.png);">
-            <div class="shopping__buy-icon">
-                <img src="images/shopping/iconbuy.svg" alt="buy">
-            </div>
-            <div class="shopping__title">
-                Start Shopping Today
-            </div>
-            <div class="shopping__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diamcongue is laoreet elit metus.
-            </div>
-            <a href="" class="shopping__btn shopping__btn-buy">
-                Start Shopping
-            </a>
-
-        </div>
-    </section>
-    <section class="feedback">
-        <div class="container">
-            <div class="feedback__inner">
-                <div class="feedback__title">
-                    Our Clients <span>Feedback</span>
-                </div>
-                <div class="feedback__text">
-                    Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
-                </div>
-                <div class="feedback__items">
-                    <div class="feedback__item">
-                        <a href="#">
-                            <div class="item__top">
-                                <div class="item__client">
-                                    <div class="item__client-avatar" style="background-image: url(images/header/avatar.jpg);">
-                                    </div>
-                                    <div class="item__client-content">
-                                        <div class="item__client-name">
-                                            Taofiqul Hakim
-                                        </div>
-                                        <div class="item__client-profession">
-                                            Product Designer
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__client-img"></div>
-                            </div>
-                            <div class="item__text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="feedback__item">
-                        <a href="#">
-                            <div class="item__top">
-                                <div class="item__client">
-                                    <div class="item__client-avatar" style="background-image: url(images/header/avatar.jpg);">
-                                    </div>
-                                    <div class="item__client-content">
-                                        <div class="item__client-name">
-                                            Saifullah Al Murtafee
-                                        </div>
-                                        <div class="item__client-profession">
-                                            Product Designer
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__client-img">
-                                </div>
-                            </div>
-                            <div class="item__text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="feedback__item">
-                        <a href="#">
-                            <div class="item__top">
-                                <div class="item__client">
-                                    <div class="item__client-avatar" style="background-image: url(images/header/avatar.jpg);">
-                                    </div>
-                                    <div class="item__client-content">
-                                        <div class="item__client-name">
-                                            Taofiqul Hakim
-                                        </div>
-                                        <div class="item__client-profession">
-                                            Product Designer
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__client-img">
-                                </div>
-                            </div>
-                            <div class="item__text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="feedback__item">
-                        <a href="#">
-                            <div class="item__top">
-                                <div class="item__client">
-                                    <div class="item__client-avatar" style="background-image: url(images/header/avatar.jpg);">
-                                    </div>
-                                    <div class="item__client-content">
-                                        <div class="item__client-name">
-                                            Saifullah Al Murtafee
-                                        </div>
-                                        <div class="item__client-profession">
-                                            Product Designer
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__client-img">
-                                </div>
-                            </div>
-                            <div class="item__text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <a href="#" class="feedback__btn">View All Reviews</a>
-            </div>
-        </div>
-    </section>
-    <section class="news">
-        <div class="container">
-            <div class="news__inner">
-                <div class="news__title">
-                    Latest <span>News</span>
-                </div>
-                <div class="news__text">
-                    Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
-                </div>
-                <div class="news__items">
-                    <div class="news__item">
-                        <a href="#" class="item__image" style="background-image: url(images/news/bgviolet.png);">
-                        </a>
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                Web Design Trends in 2017
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__date">
-                                <span class="date">24 Feb 2017</span>
-                            </div>
-                            <div class="bottom__info">
-                                <div class="bottom__comments">
-                                    45
-                                </div>
-                                <div class="bottom__seen">
-                                    345
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news__item">
-                        <a href="#" class="item__image" style="background-image: url(images/news/bgsemigreen.png);">
-                        </a>
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                The best advices to start your own project
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__date">
-                                <span class="date">15 Mar 2017</span>
-                            </div>
-                            <div class="bottom__info">
-                                <div class="bottom__comments">
-                                    45
-                                </div>
-                                <div class="bottom__seen">
-                                    345
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news__item">
-                        <a href="#" class="item__image" style="background-image: url(images/news/bgsemiviolet.png);">
-                        </a>
-                        <div class="item__inner-top">
-                            <div class="item__inner-title">
-                                Best Related Post Plugin
-                            </div>
-                            <div class="item__inner-text">
-                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                            </div>
-                        </div>
-                        <div class="item__inner-bottom">
-                            <div class="bottom__date">
-                                <span class="date">20 Dec 2016</span>
-                            </div>
-                            <div class="bottom__info">
-                                <div class="bottom__comments">
-                                    45
-                                </div>
-                                <div class="bottom__seen">
-                                    345
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="terms">
-        <div class="container">
-            <div class="terms__items">
-                <div class="terms__guarantee">
-                    <a class="terms__icon" href="#">
-                        <img src="images/terms/guarantee.png" alt="guarantee">
-                    </a>
-                    <div class="terms__title">
-                        30 Days Money Back <a class="terms__title terms__title-guarantee" href="#">Guarantee</a>
-                    </div>
-                </div>
-                <div class="terms__support">
-                    <a class="terms__icon" href="#">
-                        <img src="images/terms/support.png" alt="support">
-                    </a>
-                    <div class="terms__title">
-                        Fast and Friendly <a class="terms__title terms__title-support" href="#">Support</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="join" style="background-image: url(images/join/bc.png);">
-        <div class="join__inner">
-            <div class="join__title">Ready to Join Our Marketplace!</div>
-            <div class="join__text">
-                Over 25,000 designers and developers trust the MartPlace.
-            </div>
-            <a href="#" class="join__btn">
-                Join Us Today
-            </a>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="container">
-                <div class="footer__inner">
-                    <div class="footer__contacts">
-                        <div class="footer__contacts-logo">
-                            <a href="#">
-                                <img src="images/footer/footer_logo.png" alt="logo">
-                            </a>
-                        </div>
-                        <div class="footer__contacts-text">
-                            Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
-                        </div>
-                        <div class="footer__contacts-phone">
-                            <a href="tel:6789-875-2235">Phone: +6789-875-2235</a>
-                        </div>
-                        <div class="footer__contacts-email">
-                            <a href="mailto:support@aazztech.com">support@aazztech.com</a>
-                        </div>
-                        <div class="footer__contacts-address">
-                            <a href="#"> 202 New Hampshire Avenue Northwest #100, New York-2573</a>
-                        </div>
-                    </div>
-                    <div class="footer__sum">
-                        <div class="footer__title">
-                            Our Company
-                        </div>
-                        <ul class="footer__list">
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#">How It Work</a>
-                            </li>
-                            <li>
-                                <a href="#">Affiliates</a>
-                            </li>
-                            <li>
-                                <a href="#">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="#">Copyright Notice</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__help">
-                        <div class="footer__title">
-                            Help Support
-                        </div>
-                        <ul class="footer__list">
-                            <li>
-                                <a href="#">Support Forum</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href="#">Support Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Refund Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">FAQs</a>
-                            </li>
-                            <li>
-                                <a href="#">Buyers Faq</a>
-                            </li>
-                            <li>
-                                <a href="#">Sellers Faq</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__social">
-                        <div class="footer__title">
-                            Newsletter
-                        </div>
-                        <div class="footer__text">
-                            Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
-                        </div>
-                        <div class="footer__form">
-                            <form>
-                                <input type="email" placeholder="Enter email" required>
-                                <button type="submit">Submit</button>
+                                <button class="products__search-btn" type="submit">
+                                    Search Now
+                                </button>
                             </form>
                         </div>
-                        <ul class="footer__social-link">
-                            <li>
-                                <a class="link-facebook" href="#"></a>
-                            </li>
-                            <li>
-                                <a class="link-twitter" href="#"></a>
-                            </li>
-                            <li>
-                                <a class="link-google" href="#"></a>
-                            </li>
-                            <li>
-                                <a class="link-pinterest" href="#"></a>
-                            </li>
-                            <li>
-                                <a class="link-linkedin" href="#"></a>
-                            </li>
-                        </ul>
+                    </div>
+                </div>
+                <div class="products__info">
+                    <div class="container">
+                        <div class="products__info-items">
+                            <div class="products__info-item">
+                                <div class="products__info-images" style="background-image: url(images/products_section/item1.jpg);"></div>
+                                <div class="products__info-title">
+                                    Best UX Research
+                                </div>
+                                <div class="products__info-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="products__info-item">
+                                <div class="products__info-images" style="background-image: url(images/products_section/item2.jpg);"></div>
+                                <div class="products__info-title">
+                                    Fully Responsive
+                                </div>
+                                <div class="products__info-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="products__info-item">
+                                <div class="products__info-images" style="background-image: url(images/products_section/item3.jpg);"></div>
+                                <div class="products__info-title">
+                                    Buy & Sell Easily
+                                </div>
+                                <div class="products__info-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="featured-products">
+                <div class="container">
+                    <div class="featured-products__slider">
+                        <div class="featured-products__slider-top">
+                            <div class="featured-products__slider-title">
+                                Weekly Featured Products
+                            </div>
+                        </div>
+                        <div class="featured-products__slider-items">
+                            <div class="featured-products__slider-item">
+                                <a href="#" class="featured-products__slider-image">
+                                    <img class="featured-products__image-item" src="images/featured_products/image1.jpg" alt="image">
+                                </a>
+                                <div class="featured-products__slider-content">
+                                    <a href="#" class="featured-products__content-title">
+                                        One Page Resume Template
+                                    </a>
+                                    <div class="featured-products__content-info">
+                                        <div class="featured-products__content-user">
+                                            <a href="#" class="featured-products__content-avatar">
+                                                <div class="featured-products__content-img" style="background-image: url(images/header/avatar.jpg);">
+                                                </div>
+                                                <span class="featured-products__content-name">AazzTech</span>
+                                            </a>
+                                        </div>
+                                        <div class="featured-products__content-type">
+                                            <a href="#" class="featured-products__content-item">
+                                                <div class="featured-products__content-logo" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                                </div>
+                                                <span>WordPress</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="featured-products__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    </div>
+                                    <ul class="featured-products__content-tag">
+                                        <li class="featured-products__tag-list">
+                                            <a class="featured-products__tag-link" href="#">website</a>
+                                        </li>
+                                        <li class="featured-products__tag-list">
+                                            <a class="featured-products__tag-link" href="#">plugin</a>
+                                        </li>
+                                        <li class="featured-products__tag-list">
+                                            <a class="featured-products__tag-link" href="#">landing page</a>
+                                        </li>
+                                    </ul>
+                                    <div class="featured-products__content-bottom">
+                                        <div class="featured-products__bottom-info">
+                                            <div class="featured-products__bottom-left">
+                                                <a href="#" class="featured-products__bottom-price">
+                                                    $10 - $50
+                                                </a>
+                                                <div class="featured-products__bottom-like">
+                                                    <span class="featured-products__bottom-number">46</span>
+                                                </div>
+                                                <div class="featured-products__bottom-cart">
+                                                    <span class="featured-products__bottom-number">634</span>
+                                                </div>
+                                            </div>
+                                            <div class="featured-products__bottom-rate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-products__slider-item">
+                                <a href="#" class="featured-products__slider-image">
+                                    <img class="featured-products__image-item" src="images/featured_products/image1.jpg" alt="image">
+                                </a>
+                                <div class="featured-products__slider-content">
+                                    <a href="#" class="featured-products__content-title">
+                                        One Page Resume Template
+                                    </a>
+                                    <div class="featured-products__content-info">
+                                        <div class="featured-products__content-user">
+                                            <a href="#" class="featured-products__content-avatar">
+                                                <div class="featured-products__content-img" style="background-image: url(images/header/avatar.jpg);">
+                                                </div>
+                                                <span class="featured-products__content-name">AazzTech</span>
+                                            </a>
+                                        </div>
+                                        <div class="featured-products__content-type">
+                                            <a href="#" class="featured-products__content-item">
+                                                <div class="featured-products__content-logo" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                                </div>
+                                                <span>WordPress</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="featured-products__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    </div>
+                                    <ul class="featured-products__content-tag">
+                                        <li class="featured-products__tag-list">
+                                            <a class="featured-products__tag-link" href="#">website</a>
+                                        </li>
+                                        <li class="featured-products__tag-list">
+                                            <a class="featured-products__tag-link" href="#">plugin</a>
+                                        </li>
+                                        <li class="featured-products__tag-list">
+                                            <a class="featured-products__tag-link" href="#">landing page</a>
+                                        </li>
+                                    </ul>
+                                    <div class="featured-products__content-bottom">
+                                        <div class="featured-products__bottom-info">
+                                            <div class="featured-products__bottom-left">
+                                                <a href="#" class="featured-products__bottom-price">
+                                                    $10 - $50
+                                                </a>
+                                                <div class="featured-products__bottom-like">
+                                                    <span class="featured-products__bottom-number">46</span>
+                                                </div>
+                                                <div class="featured-products__bottom-cart">
+                                                    <span class="featured-products__bottom-number">634</span>
+                                                </div>
+                                            </div>
+                                            <div class="featured-products__bottom-rate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="release-products">
+                <div class="container">
+                    <div class="release-products__filter">
+                        <div class="release-products__filter-title">Newest Release Products</div>
+                        <div class="release-products__filter-choice">
+                            <div class="release-products__choice-title">Filter by:</div>
+                            <div class="release-products__choice-item">
+                                <img src="images/release_products/point.png" alt="filter">
+                                <ul class="release-products__choice-options">
+                                    <li class="release-products__choice-list">
+                                        <a class="release-products__choice-link" href="#">Trending Items</a>
+                                    </li>
+                                    <li class="release-products__choice-list">
+                                        <a class="release-products__choice-link" href="#">Best seller</a>
+                                    </li>
+                                    <li class="release-products__choice-list">
+                                        <a class="release-products__choice-link" href="#">Best rating</a>
+                                    </li>
+                                    <li class="release-products__choice-list">
+                                        <a class="release-products__choice-link" href="#">Low price</a>
+                                    </li>
+                                    <li class="release-products__choice-list">
+                                        <a class="release-products__choice-link" href="#">High price</a>
+                                    </li>
+                                </ul>
+                                <img class="release-products__choice-polygon" src="images/release_products/Polygon.svg" alt="polygon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="release-products__btn">
+                        <button type="button" data-filter=".category-plugin" class="release-products__btn-filter mixitup-control-active">Plugins</button>
+                        <button class="release-products__btn-filter" type="button" data-filter=".category-wordpress">WordPress</button>
+                        <button class="release-products__btn-filter" type="button" data-filter=".category-sitetemplate">Site
+                            Template</button>
+                        <button class="release-products__btn-filter" type="button" data-filter=".category-psd">PSD
+                            Template</button>
+                        <button class="release-products__btn-filter" type="button" data-filter=".category-joomla">Joomla</button>
+                        <button class="release-products__btn-filter" type="button" data-filter=".category-userinterface">User
+                            Interface</button>
+                        <button class="release-products__btn-filter" type="button" data-filter=".category-landing">Landing
+                            Page</button>
+                        <button class="release-products__btn-filter" type="button" data-filter=".category-software">Software</button>
+                    </div>
+                    <div class="release-products__items">
+                        <div class="release-products__item mix category-plugin category-new" data-order="1">
+                            <div class="release-products__item-head">
+                                <img class="release-products__item-image" src=" images/release_products/green.jpg" alt="green">
+                                <div class="release-products__item-hover">
+                                    <a class="release-products__hover-btn" href="#">More Info</a>
+                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="release-products__item-inner">
+                                <div class="release-products__inner-top">
+                                    <div class="release-products__inner-title">
+                                        E-commerce Shopping Cart
+                                    </div>
+                                    <div class="release-products__inner-info">
+                                        <div class="release-products__inner-user">
+                                            <a href="#" class="release-products__inner-avatar">
+                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                </div>
+                                                <span class="release-products__inner-name">Theme-Valley</span>
+                                            </a>
+                                            <a href="#" class="release-products__inner-tag">
+                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                                </div>
+                                                <span>Plugin</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="release-products__inner-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="release-products__inner-bottom">
+                                    <div class="release-products__bottom-info">
+                                        <div class="release-products__bottom-left">
+                                            <a href="#" class="release-products__bottom-btn">
+                                                $20
+                                            </a>
+                                            <a href="#" class="release-products__bottom-like">
+                                                90
+                                            </a>
+                                        </div>
+                                        <a href="#" class="release-products__bottom-cart">246</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="release-products__item mix category-psd category-new" data-order="2">
+                            <div class="release-products__item-head">
+                                <img class="release-products__item-image" src=" images/release_products/blue.jpg" alt="blue">
+                                <div class="release-products__item-hover">
+                                    <a class="release-products__hover-btn" href="#">More Info</a>
+                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="release-products__item-inner">
+                                <div class="release-products__inner-top">
+                                    <div class="release-products__inner-title">
+                                        Marketify Coffee Shop
+                                    </div>
+                                    <div class="release-products__inner-info">
+                                        <div class="release-products__inner-user">
+                                            <a href="#" class="release-products__inner-avatar">
+                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                </div>
+                                                <span class="release-products__inner-name">EchoTheme</span>
+                                            </a>
+                                            <a href="#" class="release-products__inner-tag">
+                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/psd.svg);">
+                                                </div>
+                                                <span>PSD</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="release-products__inner-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="release-products__inner-bottom">
+                                    <div class="release-products__bottom-info">
+                                        <div class="release-products__bottom-left">
+                                            <a href="#" class="release-products__bottom-btn">
+                                                $18
+                                            </a>
+                                            <a href="#" class="release-products__bottom-like">
+                                                48
+                                            </a>
+                                        </div>
+                                        <a href="#" class="release-products__bottom-cart">
+                                            50
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="release-products__item mix category-html category-new" data-order="3">
+                            <div class="release-products__item-head">
+                                <img class="release-products__item-image" src=" images/release_products/green.jpg" alt="green">
+                                <div class="release-products__item-hover">
+                                    <a class="release-products__hover-btn" href="#">More Info</a>
+                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="release-products__item-inner">
+                                <div class="release-products__inner-top">
+                                    <div class="release-products__inner-title">
+                                        Bryson - Portfolio Template
+                                    </div>
+                                    <div class="release-products__inner-info">
+                                        <div class="release-products__inner-user">
+                                            <a href="#" class="release-products__inner-avatar">
+                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                </div>
+                                                <span class="release-products__inner-name">Artcorner</span>
+                                            </a>
+                                            <a href="#" class="release-products__inner-tag">
+                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/html.png);">
+                                                </div>
+                                                <span>HTML</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="release-products__inner-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="release-products__inner-bottom">
+                                    <div class="release-products__bottom-info">
+                                        <div class="release-products__bottom-left">
+                                            <a href="#" class="release-products__bottom-btn">
+                                                $10
+                                            </a>
+                                            <a href="#" class="release-products__bottom-like">
+                                                56
+                                            </a>
+                                            <div class="release-products__bottom-rate">
+                                            </div>
+                                        </div>
+                                        <a href="#" class="release-products__bottom-cart">
+                                            68
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="release-products__item mix category-plugin category-new" data-order="4">
+                            <div class="release-products__item-head">
+                                <img class="release-products__item-image" src=" images/release_products/green.jpg" alt="green">
+                                <div class="release-products__item-hover">
+                                    <a class="release-products__hover-btn" href="#">More Info</a>
+                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="release-products__item-inner">
+                                <div class="release-products__inner-top">
+                                    <div class="release-products__inner-title">
+                                        E-commerce Shopping Cart
+                                    </div>
+                                    <div class="release-products__inner-info">
+                                        <div class="release-products__inner-user">
+                                            <a href="#" class="release-products__inner-avatar">
+                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                </div>
+                                                <span class="release-products__inner-name">Design-Hub</span>
+                                            </a>
+                                            <a href="#" class="release-products__inner-tag">
+                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                                </div>
+                                                <span>Plugin</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="release-products__inner-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="release-products__inner-bottom">
+                                    <div class="release-products__bottom-info">
+                                        <div class="release-products__bottom-left">
+                                            <a href="#" class="release-products__bottom-btn">
+                                                $10-50
+                                            </a>
+                                            <a href="#" class="release-products__bottom-like">
+                                                90
+                                            </a>
+                                            <div class="release-products__bottom-rate">
+                                            </div>
+                                        </div>
+                                        <a href="#" class="release-products__bottom-cart">45</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="release-products__item mix category-psd category-new" data-order="5">
+                            <div class="release-products__item-head">
+                                <img class="release-products__item-image" src=" images/release_products/blue.jpg" alt="blue">
+                                <div class="release-products__item-hover">
+                                    <a class="release-products__hover-btn" href="#">More Info</a>
+                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="release-products__item-inner">
+                                <div class="release-products__inner-top">
+                                    <div class="release-products__inner-title">
+                                        Marketify Coffee Shop
+                                    </div>
+                                    <div class="release-products__inner-info">
+                                        <div class="release-products__inner-user">
+                                            <a href="#" class="release-products__inner-avatar">
+                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                </div>
+                                                <span class="release-products__inner-name">AazzTech</span>
+                                            </a>
+                                            <a href="#" class="release-products__inner-tag">
+                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/psd.svg);">
+                                                </div>
+                                                <span>PSD</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="release-products__inner-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="release-products__inner-bottom">
+                                    <div class="release-products__bottom-info">
+                                        <div class="release-products__bottom-left">
+                                            <a href="#" class="release-products__bottom-btn">
+                                                $10-50
+                                            </a>
+                                            <a href="#" class="release-products__bottom-like">
+                                                48
+                                            </a>
+
+                                        </div>
+                                        <a href="#" class="release-products__bottom-cart">
+                                            50
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="release-products__item mix category-html category-new" data-order="3">
+                            <div class="release-products__item-head">
+                                <img class="release-products__item-image" src=" images/release_products/green.jpg" alt="green">
+                                <div class="release-products__item-hover">
+                                    <a class="release-products__hover-btn" href="#">More Info</a>
+                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="release-products__item-inner">
+                                <div class="release-products__inner-top">
+                                    <div class="release-products__inner-title">
+                                        Bryson - Portfolio Template
+                                    </div>
+                                    <div class="release-products__inner-info">
+                                        <div class="release-products__inner-user">
+                                            <a href="#" class="release-products__inner-avatar">
+                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                </div>
+                                                <span class="release-products__inner-name">Coder-Lab</span>
+                                            </a>
+                                            <a href="#" class="release-products__inner-tag">
+                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/html.png);">
+                                                </div>
+                                                <span>HTML</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="release-products__inner-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="release-products__inner-bottom">
+                                    <div class="release-products__bottom-info">
+                                        <div class="release-products__bottom-left">
+                                            <a href="#" class="release-products__bottom-btn">
+                                                $10
+                                            </a>
+                                            <a href="#" class="release-products__bottom-like">
+                                                56
+                                            </a>
+                                            <div class="release-products__bottom-rate">
+                                            </div>
+                                        </div>
+                                        <a href="#" class="release-products__bottom-cart">
+                                            68
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="release-products__button">
+                        <button class="release-products__button-all" type="button" data-filter=".category-new">All New
+                            Products</button>
+                    </div>
+                </div>
+            </section>
+            <section class="followers">
+                <div class="container">
+                    <div class="followers__slider">
+                        <div class="followers__slider-top">
+                            <div class="followers__slider-title">
+                                Your Followers Feed
+                            </div>
+                        </div>
+                        <div class="followers__slider-items">
+                            <div class="followers__slider-item">
+                                <img class="followers__item-image" src=" images/release_products/green.jpg " alt="green">
+                                <div class="followers__slider-inner">
+                                    <div class="followers__inner-top">
+                                        <div class="followers__inner-title">
+                                            E-commerce Shopping Cart
+                                        </div>
+                                        <div class="followers__inner-info">
+                                            <div class="followers__inner-user">
+                                                <a href="#" class="followers__inner-avatar">
+                                                    <div class="followers__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                    </div>
+                                                    <span class="followers__inner-name">Theme-Valley</span>
+                                                </a>
+                                                <a href="#" class="followers__inner-tag">
+                                                    <div class="followers__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg); ">
+                                                    </div>
+                                                    <span>Plugin</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="followers__inner-text">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                        </div>
+                                    </div>
+                                    <div class="followers__inner-bottom">
+                                        <div class="followers__bottom-info">
+                                            <div class="followers__bottom-left">
+                                                <a href="#" class="followers__bottom-btn">
+                                                    $20
+                                                </a>
+                                                <a href="#" class="followers__bottom-like">
+                                                    90
+                                                </a>
+                                                <div class="followers__bottom-rate"></div>
+                                            </div>
+                                            <a href="#" class="followers__bottom-cart">246</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="followers__slider-item">
+                                <img class="followers__item-image" src=" images/release_products/blue.jpg " alt="blue">
+                                <div class="followers__slider-inner">
+                                    <div class="followers__inner-top">
+                                        <div class="followers__inner-title">
+                                            Marketify Coffee Shop
+                                        </div>
+                                        <div class="followers__inner-info">
+                                            <div class="followers__inner-user">
+                                                <a href="#" class="followers__inner-avatar">
+                                                    <div class="followers__inner-img" style="background-image: url(images/release_products/avatar.jpg); ">
+                                                    </div>
+                                                    <span class="followers__inner-name">EchoTheme</span>
+                                                </a>
+                                                <a href="#" class="followers__inner-tag">
+                                                    <div class="followers__tag-image" style="background-image: url(images/featured_products/psd.svg); ">
+                                                    </div>
+                                                    <span>PSD</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="followers__inner-text">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                        </div>
+                                    </div>
+                                    <div class="followers__inner-bottom">
+                                        <div class="followers__bottom-info">
+                                            <div class="followers__bottom-left">
+                                                <a href="#" class="followers__bottom-btn">
+                                                    $18
+                                                </a>
+                                                <a href="#" class="followers__bottom-like">
+                                                    48
+                                                </a>
+                                            </div>
+                                            <a href="#" class="followers__bottom-cart">
+                                                50
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="followers__slider-item">
+                                <img class="followers__item-image" src=" images/release_products/green.jpg " alt="green ">
+                                <div class="followers__slider-inner">
+                                    <div class="followers__inner-top">
+                                        <div class="followers__inner-title">
+                                            Bryson - Portfolio Template
+                                        </div>
+                                        <div class="followers__inner-info">
+                                            <div class="followers__inner-user">
+                                                <a href="#" class="followers__inner-avatar">
+                                                    <div class="followers__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                    </div>
+                                                    <span class="followers__inner-name">Artcorner</span>
+                                                </a>
+                                                <a href="#" class="followers__inner-tag">
+                                                    <div class="followers__tag-image" style="background-image: url(images/featured_products/html.png);">
+                                                    </div>
+                                                    <span>HTML</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="followers__inner-text">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                        </div>
+                                    </div>
+                                    <div class="followers__inner-bottom">
+                                        <div class="followers__bottom-info">
+                                            <div class="followers__bottom-left">
+                                                <a href="#" class="followers__bottom-btn">
+                                                    $10
+                                                </a>
+                                                <a href="#" class="followers__bottom-like">
+                                                    56
+                                                </a>
+                                                <div class="followers__bottom-rate">
+                                                </div>
+                                            </div>
+                                            <a href="#" class="followers__bottom-cart">
+                                                68
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="followers__slider-item">
+                                <img class="followers__item-image" src=" images/release_products/green.jpg " alt="green">
+                                <div class="followers__slider-inner">
+                                    <div class="followers__inner-top">
+                                        <div class="followers__inner-title">
+                                            E-commerce Shopping Cart
+                                        </div>
+                                        <div class="followers__inner-info">
+                                            <div class="followers__inner-user">
+                                                <a href="#" class="followers__inner-avatar">
+                                                    <div class="followers__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                                    </div>
+                                                    <span class="followers__inner-name ">Design-Hub</span>
+                                                </a>
+                                                <a href="#" class="followers__inner-tag">
+                                                    <div class="followers__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                                    </div>
+                                                    <span>Plugin</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="followers__inner-text">
+                                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                        </div>
+                                    </div>
+                                    <div class="followers__inner-bottom">
+                                        <div class="followers__bottom-info">
+                                            <div class="followers__bottom-left">
+                                                <a href="#" class="followers__bottom-btn">
+                                                    $10-50
+                                                </a>
+                                                <a href="#" class="followers__bottom-like">
+                                                    90
+                                                </a>
+                                                <div class="followers__bottom-rate">
+                                                </div>
+                                            </div>
+                                            <a href="#" class="followers__bottom-cart">45</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="summary">
+                <div class="container">
+                    <div class="summary__items">
+                        <div class="summary__item summary__item--orange">
+                            <div class="summary__img summary__img--orange"></div>
+                            <div class="summary__amount">
+                                38,436
+                            </div>
+                            <div class="summary__text">items for sale</div>
+                        </div>
+                        <div class="summary__item summary__item--blue">
+                            <div class="summary__img summary__img--blue"></div>
+                            <div class="summary__amount">
+                                3,736
+                            </div>
+                            <div class="summary__text">total sales</div>
+                        </div>
+                        <div class="summary__item summary__item--green">
+                            <div class="summary__img summary__img--green"></div>
+                            <div class="summary__amount">
+                                2,736
+                            </div>
+                            <div class="summary__text">happy customers</div>
+                        </div>
+                        <div class="summary__item summary__item--red">
+                            <div class="summary__img summary__img--red"></div>
+                            <div class="summary__amount">
+                                25,736
+                            </div>
+                            <div class="summary__text">members</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reason ">
+                <div class="container ">
+                    <div class="reason__inner ">
+                        <div class="reason__title">
+                            Why Choose
+                            <span class="reason__title reason__title--blue">MartPlace</span>
+                        </div>
+                        <div class="reason__text">
+                            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+                        </div>
+                        <div class="reason__items">
+                            <div class="reason__item">
+                                <div class="reason__item-number">01</div>
+                                <a class="reason__img reason__img--license" href="#"></a>
+                                <div class="reason__item-title">
+                                    One Time Payment
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">02</div>
+                                <a class="reason__img reason__img--magic-wand" href="#"></a>
+                                <div class="reason__item-title">
+                                    Quality Products
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item ">
+                                <div class="reason__item-number">03</div>
+                                <a class="reason__img reason__img--lock" href="#"></a>
+                                <div class="reason__item-title">
+                                    100% Secure Payment
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">04</div>
+                                <a class="reason__img reason__img--chart-bars" href="#"></a>
+                                <div class="reason__item-title">
+                                    Well Organized Code
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">05</div>
+                                <a class="reason__img reason__img--leaf" href="#"></a>
+                                <div class="reason__item-title">
+                                    Life Time Free Update
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">06</div>
+                                <a class="reason__img reason__img--phone" href="#"></a>
+                                <div class="reason__item-title">
+                                    Fast and Friendly Support
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="shopping">
+                <div class="shopping__item shopping__item-blue" style="background-image: url(images/shopping/bgblue.png); ">
+                    <div class="shopping__item-icon">
+                        <img class="shopping__icon-img" src="images/shopping/iconsell.svg" alt="sell">
+                    </div>
+                    <div class="shopping__title">
+                        Sell Your Products
+                    </div>
+                    <div class="shopping__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+                    </div>
+                    <a href="#" class="shopping__btn shopping__btn--blue">
+                        Become an Author
+                    </a>
+                </div>
+                <div class="shopping__item shopping__item-violet" style="background-image: url(images/shopping/bgviolet.png);">
+                    <div class="shopping__item-icon">
+                        <img class="shopping__icon-img" src="images/shopping/iconbuy.svg" alt="buy">
+                    </div>
+                    <div class="shopping__title">
+                        Start Shopping Today
+                    </div>
+                    <div class="shopping__text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+                    </div>
+                    <a href="#" class="shopping__btn shopping__btn--violet">
+                        Start Shopping
+                    </a>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__inner">
+                        <div class="feedback__title">
+                            Our Clients <span class="feedback__title feedback__title--blue">Feedback</span>
+                        </div>
+                        <div class="feedback__text">
+                            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+                        </div>
+                        <div class="feedback__items">
+                            <div class="feedback__item">
+                                <a class="feedback__item-link" href="#">
+                                    <div class="feedback__item-top">
+                                        <div class="feedback__item-client">
+                                            <div class="feedback__client-avatar" style="background-image: url(images/header/avatar.jpg);">
+                                            </div>
+                                            <div class="feedback__client-content">
+                                                <div class="feedback__client-name">
+                                                    Taofiqul Hakim
+                                                </div>
+                                                <div class="feedback__client-profession">
+                                                    Product Designer
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="feedback__item-icon"></div>
+                                    </div>
+                                    <div class="feedback__item-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#">
+                                    <div class="feedback__item-top">
+                                        <div class="feedback__item-client">
+                                            <div class="feedback__client-avatar" style="background-image: url(images/header/avatar.jpg);">
+                                            </div>
+                                            <div class="feedback__client-content">
+                                                <div class="feedback__client-name">
+                                                    Saifullah Al Murtafee
+                                                </div>
+                                                <div class="feedback__client-profession">
+                                                    Product Designer
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="feedback__item-icon"></div>
+                                    </div>
+                                    <div class="feedback__item-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feedback__item">
+                                <a href="#">
+                                    <div class="feedback__item-top">
+                                        <div class="feedback__item-client">
+                                            <div class="feedback__client-avatar" style="background-image: url(images/header/avatar.jpg);">
+                                            </div>
+                                            <div class="feedback__client-content">
+                                                <div class="feedback__client-name">
+                                                    Taofiqul Hakim
+                                                </div>
+                                                <div class="feedback__client-profession">
+                                                    Product Designer
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="feedback__item-icon"></div>
+                                    </div>
+                                    <div class="feedback__item-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="feedback__btn">View All Reviews</a>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="news__inner">
+                        <div class="news__inner-title">
+                            Latest <span class="news__inner-title news__inner-title--blue">News</span>
+                        </div>
+                        <div class="news__inner-text">
+                            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+                        </div>
+                        <div class="news__items">
+                            <div class="news__item">
+                                <div class="news__item-image">
+                                    <img class="news__image" src="images/news/bgviolet.jpg" alt="trends">
+                                </div>
+                                <div class="news__item-top">
+                                    <a href="#" class="news__item-title">
+                                        Web Design Trends in 2017
+                                    </a>
+                                    <div class="news__item-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="news__item-bottom">
+                                    <div class="news__item-date">
+                                        24 Feb 2017
+                                    </div>
+                                    <div class="news__item-info">
+                                        <a href="#" class="news__item-comments">
+                                            45
+                                        </a>
+                                        <div class="news__item-views">
+                                            345
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news__item">
+                                <div class="news__item-image">
+                                    <img class="news__image" src="images/news/bgsemigreen.jpg" alt="advice">
+                                </div>
+                                <div class="news__item-top">
+                                    <a href="#" class="news__item-title">
+                                        The best advices to start your own project
+                                    </a>
+                                    <div class="news__item-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    </div>
+                                </div>
+                                <div class="news__item-bottom">
+                                    <div class="news__item-date">
+                                        15 Mar 2017
+                                    </div>
+                                    <div class="news__item-info">
+                                        <a href="#" class="news__item-comments">
+                                            45
+                                        </a>
+                                        <div class="news__item-views">
+                                            345
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news__item">
+                                <div class="news__item-image">
+                                    <img class="news__image" src="images/news/bgsemiviolet.jpg" alt="plugin">
+                                </div>
+                                <div class="news__item-top">
+                                    <a href="#" class="news__item-title">
+                                        Best Related Post Plugin
+                                    </a>
+                                    <div class="news__item-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="news__item-bottom">
+                                    <div class="news__item-date">
+                                        20 Dec 2016
+                                    </div>
+                                    <div class="news__item-info">
+                                        <a href="#" class="news__item-comments">
+                                            45
+                                        </a>
+                                        <div class="news__item-views">
+                                            345
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="terms">
+                <div class="container">
+                    <div class="terms__items">
+                        <div class="terms__item">
+                            <div class="terms__icon" style="background-image: url(images/terms/guarantee.png);">
+                            </div>
+                            <a href="#" class="terms__title">
+                                30 Days Money Back <span class="terms__title terms__title--blue">Guarantee</span>
+                            </a>
+                        </div>
+                        <div class="terms__item">
+                            <div class="terms__icon" style="background-image: url(images/terms/support.png);">
+                            </div>
+                            <a href="#" class="terms__title">
+                                Fast and Friendly <span class="terms__title terms__title--violet">Support</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="join" style="background-image: url(images/join/bc.png);">
+                <div class="join__inner">
+                    <div class="join__title">Ready to Join Our Marketplace!</div>
+                    <div class="join__text">
+                        Over 25,000 designers and developers trust the MartPlace.
+                    </div>
+                    <a href="#" class="join__btn">
+                        Join Us Today
+                    </a>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__contacts">
+                            <div class="footer__contacts-logo">
+                                <a class="footer__logo" href="#">
+                                    <img src="images/footer/footer_logo.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="footer__contacts-text">
+                                Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+                            </div>
+                            <a class="footer__contacts-phone" href="tel:6789-875-2235">Phone: +6789-875-2235</a>
+                            <a class="footer__contacts-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+                            <a class="footer__contacts-address" href="#">202 New Hampshire Avenue Northwest #100, New
+                                York-2573</a>
+                        </div>
+                        <div class="footer__summary">
+                            <div class="footer__title">
+                                Our Company
+                            </div>
+                            <ul class="footer__content-list">
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">About Us</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">How It Work</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Affiliates</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Testimonials</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Contact Us</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Copyright Notice</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__help">
+                            <div class="footer__title">
+                                Help Support
+                            </div>
+                            <ul class="footer__content-list">
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Support Forum</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Terms & Conditions</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Support Policy</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Refund Policy</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">FAQs</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Buyers Faq</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a class="footer__list-link" href="#">Sellers Faq</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__social">
+                            <div class="footer__title">
+                                Newsletter
+                            </div>
+                            <div class="footer__text">
+                                Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+                            </div>
+
+                            <form class="footer__form">
+                                <input class="footer__form-input" type="email" placeholder="Enter email" required>
+                                <button class="footer__form-btn" type="submit">Submit</button>
+                            </form>
+                            <ul class="footer__social-contacts">
+                                <li class="footer__social-list">
+                                    <a class="footer__link footer__link--facebook" href="#"></a>
+                                </li>
+                                <li class="footer__social-list">
+                                    <a class="footer__link footer__link--twitter" href="#"></a>
+                                </li>
+                                <li class="footer__social-list">
+                                    <a class="footer__link footer__link--google" href="#"></a>
+                                </li>
+                                <li class="footer__social-list">
+                                    <a class="footer__link footer__link--pinterest" href="#"></a>
+                                </li>
+                                <li class="footer__social-list">
+                                    <a class="footer__link footer__link--linkedin" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__copy">
-            <div class="container">
-                <div class="footer__copy-text">
-                    ©2017 <span>MartPlace</span>. All rights reserved. Created by <span>AazzTech</span>
+            <div class="footer__copy">
+                <div class="container">
+                    <div class="footer__copy-text">
+                        ©2017 <span class="footer__copy-text footer__copy-text--white">MartPlace</span>. All rights reserved. Created by <span class="footer__copy-text footer__copy-text--white">AazzTech</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="js/libs.min.js "></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>

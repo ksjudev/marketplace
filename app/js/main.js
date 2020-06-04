@@ -1,20 +1,40 @@
 $(function() {
 
-    $('.slider__inner').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        nextArrow: ".slick-next-featured",
-        prevArrow: ".slick-prev-featured"
+    $(".featured-products__bottom-rate").rateYo({
+        rating: 4.5,
+        starWidth: "15px",
+        readOnly: true,
+        spacing: "3px"
     });
 
-    $('.slider__items').slick({
+    $(".release-products__bottom-rate").rateYo({
+        rating: 4.5,
+        starWidth: "15px",
+        readOnly: true,
+        spacing: "3px"
+    });
+
+    $(".followers__bottom-rate").rateYo({
+        rating: 4.5,
+        starWidth: "15px",
+        readOnly: true,
+        spacing: "3px"
+    });
+
+
+    $('.featured-products__slider-items').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-arrow slick-prev"></button>',
+        nextArrow: '<button class="slick-arrow slick-next"></button>'
+
+    });
+
+    $('.followers__slider-items').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        // variableWidth: true,
-        variableWidth: false,
-        draggable: false,
-        nextArrow: ".slick-next",
-        prevArrow: ".slick-prev"
+        prevArrow: '<button class="slick-arrow slick-prev"></button>',
+        nextArrow: '<button class="slick-arrow slick-next"></button>'
     });
 
     $('.feedback__items').slick({
@@ -24,11 +44,11 @@ $(function() {
         nextArrow: '<button class="slick-arrow slick-next"></button>',
     });
 
-    $('.filter__choice').on('click', function() {
-        $('.filter__choice > ul').slideToggle();
-        $('.filter__choice > .filter__choice-polygon').slideToggle()
+    $('.release-products__choice-item').on('click', function() {
+        $('.release-products__choice-item > .release-products__choice-options').slideToggle();
+        $('.release-products__choice-item > .release-products__choice-polygon').slideToggle()
     });
 
 
-    var mixer = mixitup('.release__products-items');
+    var mixer = mixitup('.release-products__items');
 });
