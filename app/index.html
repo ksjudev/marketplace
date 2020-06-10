@@ -20,70 +20,635 @@
                             <a href="#" class="header__logo">
                                 <img src="images/header/logo.png" alt="logo">
                             </a>
-                            <div class="header__top-inner">
-                                <a href="#" class="header__btn">Become a Seller</a>
-                                <div class="header__notifications">
-                                    <a class="header__notification header__notification--alarm" href="#">
-                                        <div class="header__badge header__badge--red">25</div>
-                                    </a>
-                                    <a class="header__notification header__notification--envelope" href="#">
-                                        <div class="header__badge header__badge--green">6</div>
-                                    </a>
-                                    <a class="header__notification header__notification--cart" href="#">
-                                        <div class="header__badge header__badge--blue">2</div>
-                                    </a>
+                            <div class="header__inner">
+                                <div class="header__top-menu">
+                                    <ul class="header__top-list">
+                                        <li class="header__item"><a class="header__link" href="#">Start
+                                                Selling</a></li>
+                                        <li class="header__item"><a class="header__link" href="#">Forums</a>
+                                        </li>
+                                        <li class="header__item"><a class="header__link" href="#">Help</a></li>
+                                    </ul>
                                 </div>
-                                <a href="#" class="header__user">
-                                    <div class="header__user-img" style="background-image: url(images/header/avatar.jpg);">
+                                <a href="#" class="header__btn">Become a Seller</a>
+                                <div class="header__box">
+                                    <div class="header__notifications">
+                                        <div class="header__notification header__notification--alarm">
+                                            <a class="header__message header__message--alarm" href="#">
+                                                <div class="header__badge header__badge--red">25</div>
+                                            </a>
+                                            <div class="header__polygon" style="background-image: url(images/header/polygon-blue.svg);"></div>
+                                            <div class="header__notification-menu header__notification-menu--alarm">
+                                                <div class="header__notification-top header__notification-top--alarm">
+                                                    <div class="header__notification-title">
+                                                        My Notifications
+                                                    </div>
+                                                    <a class="header__notification-btn" href="#">
+                                                        View All
+                                                    </a>
+                                                </div>
+                                                <div class="header__notification-item header__notification-item--alarm">
+
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <a href="#" class="header__notification-message header__notification-message--alarm">
+                                                        <div class="header__message-name">
+                                                            Anderson
+                                                            <span class="header__message-text header__message-text--grey">added
+                                                                to Favourite </span>
+                                                            <span class="header__message-text header__message-text--blue">
+                                                                Marketify Coffee Shop</span>
+                                                        </div>
+                                                        <div class="header__message-time header__message-time--grey">
+                                                            Just now
+                                                        </div>
+                                                    </a>
+                                                    <div class="header__message-icon lnr-heart"></div>
+                                                </div>
+
+                                                <div class="header__notification-item header__notification-item--alarm">
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <a href="#" class="header__notification-message header__notification-message--alarm">
+                                                        <div class="header__message-name">
+                                                            Michael Jorden
+                                                            <span class="header__message-text header__message-text--grey">commented
+                                                                on </span>
+                                                            <span class="header__message-text header__message-text--blue">
+                                                                MartPlace Extension Bundle</span>
+                                                            <div class="header__message-time header__message-time--grey">
+                                                                2 hours ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="header__message-icon lnr-bubble"></div>
+                                                </div>
+
+                                                <div class="header__notification-item header__notification-item--alarm">
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <a href="#" class="header__notification-message header__notification-message--alarm">
+                                                        <div class="header__message-name">
+                                                            Moshed
+                                                            <span class="header__message-text header__message-text--grey">Purchased
+                                                            </span>
+                                                            <span class="header__message-text header__message-text--blue">
+                                                                Bryson-Responsive Template</span>
+                                                            <div class="header__message-time header__message-time--grey">
+                                                                6 hours ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="header__message-icon lnr-cart"></div>
+                                                </div>
+
+                                                <div class="header__notification-item header__notification-item--alarm">
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <a href="#" class="header__notification-message header__notification-message--alarm">
+                                                        <div class="header__message-name">
+                                                            Tamim <span class="header__message-text header__message-text--grey">wrote
+                                                                a review on </span>
+                                                            <span class="header__message-text header__message-text--blue">
+                                                                Rida-Responsive vCard Temp...</span>
+                                                            <div class="header__message-time header__message-time--grey">
+                                                                2 days ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="header__message-icon lnr-star"></div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="header__notification header__notification--envelope">
+                                            <a class="header__message header__message--envelope" href="#">
+                                                <div class="header__badge header__badge--green">6</div>
+                                            </a>
+                                            <div class="header__polygon" style="background-image: url(images/header/polygon-blue.svg);"></div>
+                                            <div class="header__notification-menu">
+                                                <div class="header__notification-top">
+                                                    <div class="header__notification-title">
+                                                        My Messages
+                                                    </div>
+                                                    <a class="header__notification-btn" href="#">
+                                                        View All
+                                                    </a>
+                                                </div>
+                                                <div class="header__notification-item header__notification-item--message">
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <a href="#" class="header__notification-message">
+                                                        <div class="header__message-box">
+                                                            <div class="header__message-name header__message-name--new">
+                                                                Washim
+                                                            </div>
+
+                                                            <div class="header__message-time">
+                                                                Just now
+                                                            </div>
+                                                        </div>
+                                                        <div class="header__message-text">
+                                                            Hello John Smith! Nunc placerat id...
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="header__notification-item header__notification-item--message">
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <a href="#" class="header__notification-message">
+                                                        <div class="header__message-box">
+                                                            <div class="header__message-name header__message-name--new">
+                                                                Bulbul Ahmed
+                                                            </div>
+                                                            <div class="header__message-time">
+                                                                2 hours ago
+                                                            </div>
+                                                        </div>
+                                                        <div class="header__message-text">
+                                                            Hello John Smith! Nunc placerat id...
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="header__notification-item header__notification-item--message">
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <a href="#" class="header__notification-message">
+                                                        <div class="header__message-box">
+                                                            <div class="header__message-name">
+                                                                EchoTheme
+                                                                <img class="header__message-reply" src="images/header/reply.svg" alt="reply">
+                                                            </div>
+                                                            <div class="header__message-time">
+                                                                Jul 16
+                                                            </div>
+                                                        </div>
+                                                        <div class="header__message-text">
+                                                            Hello John Smith! Nunc placerat id...
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="header__notification-item header__notification-item--message">
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <a href="#" class="header__notification-message">
+                                                        <div class="header__message-box">
+                                                            <div class="header__message-name">
+                                                                Themeluva
+                                                            </div>
+                                                            <div class="header__message-time">
+                                                                May 23
+                                                            </div>
+                                                        </div>
+                                                        <div class="header__message-text">
+                                                            Hello John Smith! Nunc placerat id...
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="header__notification-item header__notification-item--message">
+                                                    <div class="header__notification-avatar" style="background-image: url(images/header/avatar.jpg);"></div>
+                                                    <div class="header__notification-message">
+                                                        <div class="header__message-box">
+                                                            <div class="header__message-name">
+                                                                Adnan
+                                                            </div>
+                                                            <div class="header__message-time">
+                                                                May 26
+                                                            </div>
+                                                        </div>
+                                                        <div class="header__message-text">
+                                                            Hello John Smith! Nunc placerat id...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__notification header__notification--cart">
+                                            <a class="header__message header__message--cart" href="#">
+                                                <div class="header__badge header__badge--blue">2</div>
+                                            </a>
+                                            <div class="header__polygon" style="background-image: url(images/header/polygon-blue.svg);"></div>
+                                            <div class="header__notification-menu header__notification-menu--cart">
+                                                <div class="header__notification-item">
+                                                    <div class="header__item-left">
+                                                        <div class="header__notification-avatar header__notification-avatar--cart" style="background-image: url(images/header/drop-img.jpg);">
+                                                        </div>
+                                                        <div class="header__item-content">
+                                                            <a href="#" class="header__item-title">
+                                                                Finance and Consulting Business Theme
+                                                            </a>
+                                                            <a href="#" class="header__item-tag">
+                                                                <div class="header__tag-icon" style="background-image:url(images/featured_products/wordpresssvg.svg)">
+                                                                </div>
+                                                                <span>Wordpress</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__item-right">
+                                                        <a href="#" class="header__item-icon lnr-trash"></a>
+                                                        <div class="header__item-price">$60</div>
+                                                    </div>
+                                                </div>
+                                                <div class="header__notification-item">
+                                                    <div class="header__item-left">
+                                                        <div class="header__notification-avatar header__notification-avatar--cart" style="background-image: url(images/header/drop-img.jpg);">
+                                                        </div>
+                                                        <div class="header__item-content">
+                                                            <a href="#" class="header__item-title">
+                                                                Flounce - Multipurpose
+                                                                OpenCart Theme
+                                                            </a>
+                                                            <a href="#" class="header__item-tag">
+                                                                <div class="header__tag-icon" style="background-image:url(images/featured_products/wordpresssvg.svg)">
+                                                                </div>
+                                                                <span>Wordpress</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__item-right">
+                                                        <a href="#" class="header__item-icon lnr-trash"></a>
+                                                        <div class="header__item-price">$20</div>
+                                                    </div>
+                                                </div>
+                                                <div class="header__notification-item header__notification-item--cart">
+                                                    <div class="header__item-title header__item-title--cart">
+                                                        Total: </div>
+                                                    <div class="header__item-total">$80</div>
+                                                </div>
+                                                <div class="header__cart-btn">
+                                                    <a class="header__cart header__cart--cart" href="#">Go to Cart</a>
+                                                    <a class="header__cart header__cart--checkout" href="#">Go to
+                                                        Checkout</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="header__user-details">
-                                        <div class="header__user-name"> Taofiq Hakim</div>
-                                        <div class="header__user-balance">$20.45</div>
+                                    <div class="header__user">
+                                        <div class="header__user-img" style="background-image: url(images/header/avatar.jpg);">
+                                        </div>
+                                        <a href="#" class="header__user-details">
+                                            <div class="header__user-name"> Taofiq Hakim</div>
+                                            <div class="header__user-balance">$20.45</div>
+                                        </a>
+                                        <div class="header__polygon header__polygon--user" style="background-image: url(images/header/polygon-blue.svg);"></div>
+                                        <div class="header__user-menu">
+                                            <ul class="header__user-options">
+                                                <li class="header__user-list"><a class="header__user-link header__user-link--user" href="#">Profile
+                                                        Page</a></li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--home" href="#">Dashboard
+                                                    </a>
+                                                </li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--cog" href="#">Account
+                                                        Settings</a>
+                                                </li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--cart" href="#">Your
+                                                        Purchases</a>
+                                                </li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--heart" href="#">Your
+                                                        Favorites</a>
+                                                </li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--dice" href="#">Add
+                                                        Credits</a>
+                                                </li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--chart-bar" href="#">Sales
+                                                        Statements</a>
+                                                </li>
+                                                <li class="header__user-list ">
+                                                    <a class="header__user-link header__user-link--upload" href="#">Upload
+                                                        Item </a>
+                                                </li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--book" href="#">Edit
+                                                        Item</a>
+                                                </li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--briefcase" href="#">Withdrawals</a>
+                                                </li>
+                                                <li class="header__user-list">
+                                                    <a class="header__user-link header__user-link--exit" href="#">Logout</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
+                                <div class="header__box-btn lnr-user"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="header__menu">
-                    <div class="container">
-                        <div class="header__menu-inner">
-                            <nav class="header__menu-nav">
-                                <ul class="header__menu-list">
-                                    <li class="header__list">
-                                        <a class="header__list-link" href="#">
-                                            home
-                                        </a>
-                                    </li>
-                                    <li class="header__list">
-                                        <a class="header__list-link" href="#">
-                                            all products
-                                        </a>
-                                    </li>
-                                    <li class="header__list">
-                                        <a class="header__list-link" href="#">
-                                            wordpress
-                                        </a>
-                                    </li>
-                                    <li class="header__list">
-                                        <a class="header__list-link" href="#">
-                                            festures
-                                        </a>
-                                    </li>
-                                    <li class="header__list">
-                                        <a class="header__list-link" href="#">
-                                            pages
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <form class="header__menu-form">
-                                <input class="header__menu-search" type="search" name="q" placeholder="Search product here...">
-                                <button class="header__menu-btn" type="submit"></button>
-                            </form>
+                    <div class="header__menu">
+                        <div class="container">
+                            <div class="header__menu-inner">
+                                <nav class="header__menu-nav">
+                                    <div class="header__menu-button">
+                                        <div class="header__button"></div>
+                                        <div class="header__button"></div>
+                                        <div class="header__button"></div>
+                                    </div>
+                                    <ul class="header__menu-list">
+                                        <li class="header__list">
+                                            <a class="header__list-link" href="#">
+                                                home
+                                            </a>
+                                            <ul class="header__drop-down-list">
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Home One Multi User</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Home Two Single User</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Home Three Product</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__list">
+                                            <a class="header__list-link" href="#">
+                                                all products
+                                            </a>
+                                            <ul class="header__drop-down-list">
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Recent Items</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Popular Items</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Featured Items</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Free Templates</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Follow Feed</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Top Authors</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__list">
+                                            <a class="header__list-link" href="#">
+                                                wordpress
+                                            </a>
+                                            <ul class="header__drop-down-list">
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Popular Items</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Admin Templates</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Blog / Magazine /
+                                                        News</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Creative</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Corporate Business</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Resume Portfolio</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">eCommerce</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Entertainment</a>
+                                                </li>
+                                                <li class="header__drop-down-item">
+                                                    <a class="header__drop-down-link" href="#">Landing Pages</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__list">
+                                            <a class="header__list-link" href="#">
+                                                festures
+                                            </a>
+                                        </li>
+                                        <li class="header__list">
+                                            <a class="header__list-link" href="#">
+                                                pages
+                                            </a>
+                                            <div class="header__drop-down-list header__drop-down-list--pages">
+                                                <div class="header__drop-down-items">
+                                                    <div class="header__drop-down-title">MartPlace Pages</div>
+                                                    <ul class="header__drop-down-columns">
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Home Page One</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Home Page Two</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Home Page
+                                                                Three</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Products Grid</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Products List</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Category Grid
+                                                                Sidebar</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Category List
+                                                                Sidebar</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Search
+                                                                Product</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Single Product
+                                                                V-1</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Single Product
+                                                                V-2</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Single Product
+                                                                V-3</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Single Items
+                                                                Comments</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Single Items
+                                                                Reviews</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Single Items
+                                                                Support</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Single Items
+                                                                FAQs</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Favorites
+                                                                Items</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Author
+                                                                Profile</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Author Items</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Customer
+                                                                Reviews</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Followers</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Following</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Product View
+                                                                Variations</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="header__drop-down-items">
+                                                    <div class="header__drop-down-title">Dashboard</div>
+                                                    <ul class="header__drop-down-columns header__drop-down-columns--dashboard">
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Dashboard</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Account
+                                                                Settings</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Author
+                                                                Purchases</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Items Rating</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Add Credits</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Statements</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Invoice</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Upload Item</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Edit Items</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Withdrawals</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Add Payment
+                                                                Method</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="header__drop-down-items">
+                                                    <div class="header__drop-down-title">Others Pages</div>
+                                                    <ul class="header__drop-down-columns">
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Notifications</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Message Inbox</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Message
+                                                                Compose</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Shopping Cart</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Checkout</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Login</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Register</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Recovery
+                                                                Password</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Support Forum</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Forum Details</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">How It Works</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">About Us</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Pricing Plan</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Testimonials</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">FAQs</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">FAQs Details</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Affiliates</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Terms &
+                                                                Conditions</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Blog V-1</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Blog V-2</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Blog Details</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Contact Us</a>
+                                                        </li>
+                                                        <li class="header__drop-down-item">
+                                                            <a class="header__drop-down-link" href="#">Menu & Footer
+                                                                Variation</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <form class="header__menu-form">
+                                    <input class="header__menu-search" type="search" name="q" placeholder="Search product here...">
+                                    <button class="header__menu-btn" type="submit"></button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
             </header>
             <section class="products">
                 <div class="products__create">
@@ -99,8 +664,8 @@
                                 MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                             </div>
                             <div class="products__btn">
-                                <a class="products__btn-link" href="#">View All Products</a>
-                                <a class="products__btn-link" href="#">Popular Products</a>
+                                <a class="products__link" href="#">View All Products</a>
+                                <a class="products__link" href="#">Popular Products</a>
                             </div>
                         </div>
                     </div>
@@ -122,158 +687,157 @@
                         </div>
                     </div>
                 </div>
-                <div class="products__info">
-                    <div class="container">
-                        <div class="products__info-items">
-                            <div class="products__info-item">
-                                <div class="products__info-images" style="background-image: url(images/products_section/item1.jpg);"></div>
-                                <div class="products__info-title">
-                                    Best UX Research
-                                </div>
-                                <div class="products__info-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                                </div>
+            </section>
+            <section class="info">
+                <div class="container">
+                    <div class="info__items">
+                        <div class="info__item">
+                            <div class="info__images" style="background-image: url(images/products_section/item1.jpg);">
                             </div>
-                            <div class="products__info-item">
-                                <div class="products__info-images" style="background-image: url(images/products_section/item2.jpg);"></div>
-                                <div class="products__info-title">
-                                    Fully Responsive
-                                </div>
-                                <div class="products__info-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                                </div>
+                            <div class="info__title">
+                                Best UX Research
                             </div>
-                            <div class="products__info-item">
-                                <div class="products__info-images" style="background-image: url(images/products_section/item3.jpg);"></div>
-                                <div class="products__info-title">
-                                    Buy & Sell Easily
-                                </div>
-                                <div class="products__info-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                                </div>
+                            <div class="info__text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__images" style="background-image: url(images/products_section/item2.jpg);">
+                            </div>
+                            <div class="info__title">
+                                Fully Responsive
+                            </div>
+                            <div class="info__text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__images" style="background-image: url(images/products_section/item3.jpg);">
+                            </div>
+                            <div class="info__title">
+                                Buy & Sell Easily
+                            </div>
+                            <div class="info__text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="featured-products">
+            <section class="featured">
                 <div class="container">
-                    <div class="featured-products__slider">
-                        <div class="featured-products__slider-top">
-                            <div class="featured-products__slider-title">
+                    <div class="featured__slider">
+                        <div class="featured__slider-top">
+                            <div class="featured__slider-title">
                                 Weekly Featured Products
                             </div>
                         </div>
-                        <div class="featured-products__slider-items">
-                            <div class="featured-products__slider-item">
-                                <a href="#" class="featured-products__slider-image">
-                                    <img class="featured-products__image-item" src="images/featured_products/image1.jpg" alt="image">
-                                </a>
-                                <div class="featured-products__slider-content">
-                                    <a href="#" class="featured-products__content-title">
+                        <div class="featured__slider-items">
+                            <div class="featured__slider-item">
+                                <img class="featured__image-item" src="images/featured_products/image1.jpg" alt="image">
+                                <div class="featured__slider-content">
+                                    <a href="#" class="featured__content-title">
                                         One Page Resume Template
                                     </a>
-                                    <div class="featured-products__content-info">
-                                        <div class="featured-products__content-user">
-                                            <a href="#" class="featured-products__content-avatar">
-                                                <div class="featured-products__content-img" style="background-image: url(images/header/avatar.jpg);">
+                                    <div class="featured__content-info">
+                                        <div class="featured__content-user">
+                                            <a href="#" class="featured__content-avatar">
+                                                <div class="featured__content-img" style="background-image: url(images/header/avatar.jpg);">
                                                 </div>
-                                                <span class="featured-products__content-name">AazzTech</span>
+                                                <span class="featured__content-name">AazzTech</span>
                                             </a>
                                         </div>
-                                        <div class="featured-products__content-type">
-                                            <a href="#" class="featured-products__content-item">
-                                                <div class="featured-products__content-logo" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                        <div class="featured__content-type">
+                                            <a href="#" class="featured__content-item">
+                                                <div class="featured__content-logo" style="background-image: url(images/featured_products/wordpresssvg.svg);">
                                                 </div>
                                                 <span>WordPress</span>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="featured-products__content-text">
+                                    <div class="featured__content-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
                                     </div>
-                                    <ul class="featured-products__content-tag">
-                                        <li class="featured-products__tag-list">
-                                            <a class="featured-products__tag-link" href="#">website</a>
+                                    <ul class="featured__content-tag">
+                                        <li class="featured__tag-list">
+                                            <a class="featured__tag-link" href="#">website</a>
                                         </li>
-                                        <li class="featured-products__tag-list">
-                                            <a class="featured-products__tag-link" href="#">plugin</a>
+                                        <li class="featured__tag-list">
+                                            <a class="featured__tag-link" href="#">plugin</a>
                                         </li>
-                                        <li class="featured-products__tag-list">
-                                            <a class="featured-products__tag-link" href="#">landing page</a>
+                                        <li class="featured__tag-list">
+                                            <a class="featured__tag-link" href="#">landing page</a>
                                         </li>
                                     </ul>
-                                    <div class="featured-products__content-bottom">
-                                        <div class="featured-products__bottom-info">
-                                            <div class="featured-products__bottom-left">
-                                                <a href="#" class="featured-products__bottom-price">
+                                    <div class="featured__content-bottom">
+                                        <div class="featured__bottom-info">
+                                            <div class="featured__bottom-left">
+                                                <a href="#" class="featured__bottom-price">
                                                     $10 - $50
                                                 </a>
-                                                <div class="featured-products__bottom-like">
-                                                    <span class="featured-products__bottom-number">46</span>
+                                                <div class="featured__bottom-like">
+                                                    <span class="featured__bottom-number">46</span>
                                                 </div>
-                                                <div class="featured-products__bottom-cart">
-                                                    <span class="featured-products__bottom-number">634</span>
+                                                <div class="featured__bottom-cart">
+                                                    <span class="featured__bottom-number">634</span>
                                                 </div>
                                             </div>
-                                            <div class="featured-products__bottom-rate">
+                                            <div class="featured__bottom-rate">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="featured-products__slider-item">
-                                <a href="#" class="featured-products__slider-image">
-                                    <img class="featured-products__image-item" src="images/featured_products/image1.jpg" alt="image">
-                                </a>
-                                <div class="featured-products__slider-content">
-                                    <a href="#" class="featured-products__content-title">
+                            <div class="featured__slider-item">
+                                <img class="featured__image-item" src="images/featured_products/image1.jpg" alt="image">
+                                <div class="featured__slider-content">
+                                    <a href="#" class="featured__content-title">
                                         One Page Resume Template
                                     </a>
-                                    <div class="featured-products__content-info">
-                                        <div class="featured-products__content-user">
-                                            <a href="#" class="featured-products__content-avatar">
-                                                <div class="featured-products__content-img" style="background-image: url(images/header/avatar.jpg);">
+                                    <div class="featured__content-info">
+                                        <div class="featured__content-user">
+                                            <a href="#" class="featured__content-avatar">
+                                                <div class="featured__content-img" style="background-image: url(images/header/avatar.jpg);">
                                                 </div>
-                                                <span class="featured-products__content-name">AazzTech</span>
+                                                <span class="featured__content-name">AazzTech</span>
                                             </a>
                                         </div>
-                                        <div class="featured-products__content-type">
-                                            <a href="#" class="featured-products__content-item">
-                                                <div class="featured-products__content-logo" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                        <div class="featured__content-type">
+                                            <a href="#" class="featured__content-item">
+                                                <div class="featured__content-logo" style="background-image: url(images/featured_products/wordpresssvg.svg);">
                                                 </div>
                                                 <span>WordPress</span>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="featured-products__content-text">
+                                    <div class="featured__content-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
                                     </div>
-                                    <ul class="featured-products__content-tag">
-                                        <li class="featured-products__tag-list">
-                                            <a class="featured-products__tag-link" href="#">website</a>
+                                    <ul class="featured__content-tag">
+                                        <li class="featured__tag-list">
+                                            <a class="featured__tag-link" href="#">website</a>
                                         </li>
-                                        <li class="featured-products__tag-list">
-                                            <a class="featured-products__tag-link" href="#">plugin</a>
+                                        <li class="featured__tag-list">
+                                            <a class="featured__tag-link" href="#">plugin</a>
                                         </li>
-                                        <li class="featured-products__tag-list">
-                                            <a class="featured-products__tag-link" href="#">landing page</a>
+                                        <li class="featured__tag-list">
+                                            <a class="featured__tag-link" href="#">landing page</a>
                                         </li>
                                     </ul>
-                                    <div class="featured-products__content-bottom">
-                                        <div class="featured-products__bottom-info">
-                                            <div class="featured-products__bottom-left">
-                                                <a href="#" class="featured-products__bottom-price">
+                                    <div class="featured__content-bottom">
+                                        <div class="featured__bottom-info">
+                                            <div class="featured__bottom-left">
+                                                <a href="#" class="featured__bottom-price">
                                                     $10 - $50
                                                 </a>
-                                                <div class="featured-products__bottom-like">
-                                                    <span class="featured-products__bottom-number">46</span>
+                                                <div class="featured__bottom-like">
+                                                    <span class="featured__bottom-number">46</span>
                                                 </div>
-                                                <div class="featured-products__bottom-cart">
-                                                    <span class="featured-products__bottom-number">634</span>
+                                                <div class="featured__bottom-cart">
+                                                    <span class="featured__bottom-number">634</span>
                                                 </div>
                                             </div>
-                                            <div class="featured-products__bottom-rate">
+                                            <div class="featured__bottom-rate">
                                             </div>
                                         </div>
                                     </div>
@@ -283,335 +847,335 @@
                     </div>
                 </div>
             </section>
-            <section class="release-products">
+            <section class="release">
                 <div class="container">
-                    <div class="release-products__filter">
-                        <div class="release-products__filter-title">Newest Release Products</div>
-                        <div class="release-products__filter-choice">
-                            <div class="release-products__choice-title">Filter by:</div>
-                            <div class="release-products__choice-item">
-                                <img src="images/release_products/point.png" alt="filter">
-                                <ul class="release-products__choice-options">
-                                    <li class="release-products__choice-list">
-                                        <a class="release-products__choice-link" href="#">Trending Items</a>
-                                    </li>
-                                    <li class="release-products__choice-list">
-                                        <a class="release-products__choice-link" href="#">Best seller</a>
-                                    </li>
-                                    <li class="release-products__choice-list">
-                                        <a class="release-products__choice-link" href="#">Best rating</a>
-                                    </li>
-                                    <li class="release-products__choice-list">
-                                        <a class="release-products__choice-link" href="#">Low price</a>
-                                    </li>
-                                    <li class="release-products__choice-list">
-                                        <a class="release-products__choice-link" href="#">High price</a>
-                                    </li>
-                                </ul>
-                                <img class="release-products__choice-polygon" src="images/release_products/Polygon.svg" alt="polygon">
-                            </div>
+                    <div class="release__filter">
+                        <div class="release__title">Newest Release Products</div>
+                        <div class="release__choice-menu">
+                            <button class="release__choice-button">Filter by:
+                                <div class="release__choice-icon"
+                                    style="background-image: url(images/release_products/point.png);"></div>
+                            </button>
+                            <ul class="release__list">
+                                <li class="release__list-item">
+                                    <a class="release__link" href="#">Trending Items</a>
+                                </li>
+                                <li class="release__list-item">
+                                    <a class="release__link" href="#">Best seller</a>
+                                </li>
+                                <li class="release__list-item">
+                                    <a class="release__link" href="#">Best rating</a>
+                                </li>
+                                <li class="release__list-item">
+                                    <a class="release__link" href="#">Low price</a>
+                                </li>
+                                <li class="release__list-item">
+                                    <a class="release__link" href="#">High price</a>
+                                </li>
+                            </ul>
+                            <div class="release__polygon" style="background-image: url(images/release_products/Polygon.svg);"></div>
                         </div>
                     </div>
-                    <div class="release-products__btn">
-                        <button type="button" data-filter=".category-plugin" class="release-products__btn-filter mixitup-control-active">Plugins</button>
-                        <button class="release-products__btn-filter" type="button" data-filter=".category-wordpress">WordPress</button>
-                        <button class="release-products__btn-filter" type="button" data-filter=".category-sitetemplate">Site
+                    <div class="release__btns">
+                        <button type="button" data-filter=".category-plugin" class="release__btn mixitup-control-active">Plugins</button>
+                        <button class="release__btn" type="button" data-filter=".category-wordpress">WordPress</button>
+                        <button class="release__btn" type="button" data-filter=".category-sitetemplate">Site
                             Template</button>
-                        <button class="release-products__btn-filter" type="button" data-filter=".category-psd">PSD
+                        <button class="release__btn" type="button" data-filter=".category-psd">PSD
                             Template</button>
-                        <button class="release-products__btn-filter" type="button" data-filter=".category-joomla">Joomla</button>
-                        <button class="release-products__btn-filter" type="button" data-filter=".category-userinterface">User
+                        <button class="release__btn" type="button" data-filter=".category-joomla">Joomla</button>
+                        <button class="release__btn" type="button" data-filter=".category-userinterface">User
                             Interface</button>
-                        <button class="release-products__btn-filter" type="button" data-filter=".category-landing">Landing
+                        <button class="release__btn" type="button" data-filter=".category-landing">Landing
                             Page</button>
-                        <button class="release-products__btn-filter" type="button" data-filter=".category-software">Software</button>
+                        <button class="release__btn" type="button" data-filter=".category-software">Software</button>
                     </div>
-                    <div class="release-products__items">
-                        <div class="release-products__item mix category-plugin category-new" data-order="1">
-                            <div class="release-products__item-head">
-                                <img class="release-products__item-image" src=" images/release_products/green.jpg" alt="green">
-                                <div class="release-products__item-hover">
-                                    <a class="release-products__hover-btn" href="#">More Info</a>
-                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                    <div class="release__items">
+                        <div class="release__item mix category-plugin category-new" data-order="1">
+                            <div class="release__item-head">
+                                <img class="release__item-image" src=" images/release_products/green.jpg" alt="green">
+                                <div class="release__item-hover">
+                                    <a class="release__hover-btn" href="#">More Info</a>
+                                    <a class="release__hover-btn" href="#">Live Demo</a>
                                 </div>
                             </div>
-                            <div class="release-products__item-inner">
-                                <div class="release-products__inner-top">
-                                    <div class="release-products__inner-title">
+                            <div class="release__item-inner">
+                                <div class="release__inner-top">
+                                    <div class="release__inner-title">
                                         E-commerce Shopping Cart
                                     </div>
-                                    <div class="release-products__inner-info">
-                                        <div class="release-products__inner-user">
-                                            <a href="#" class="release-products__inner-avatar">
-                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                    <div class="release__inner-info">
+                                        <div class="release__inner-user">
+                                            <a href="#" class="release__inner-avatar">
+                                                <div class="release__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
                                                 </div>
-                                                <span class="release-products__inner-name">Theme-Valley</span>
+                                                <span class="release__inner-name">Theme-Valley</span>
                                             </a>
-                                            <a href="#" class="release-products__inner-tag">
-                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                            <a href="#" class="release__inner-tag">
+                                                <div class="release__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
                                                 </div>
                                                 <span>Plugin</span>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="release-products__inner-text">
+                                    <div class="release__inner-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="release-products__inner-bottom">
-                                    <div class="release-products__bottom-info">
-                                        <div class="release-products__bottom-left">
-                                            <a href="#" class="release-products__bottom-btn">
+                                <div class="release__inner-bottom">
+                                    <div class="release__bottom-info">
+                                        <div class="release__bottom-left">
+                                            <a href="#" class="release__bottom-btn">
                                                 $20
                                             </a>
-                                            <a href="#" class="release-products__bottom-like">
+                                            <a href="#" class="release__bottom-like">
                                                 90
                                             </a>
                                         </div>
-                                        <a href="#" class="release-products__bottom-cart">246</a>
+                                        <a href="#" class="release__bottom-cart">246</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="release-products__item mix category-psd category-new" data-order="2">
-                            <div class="release-products__item-head">
-                                <img class="release-products__item-image" src=" images/release_products/blue.jpg" alt="blue">
-                                <div class="release-products__item-hover">
-                                    <a class="release-products__hover-btn" href="#">More Info</a>
-                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                        <div class="release__item mix category-psd category-new" data-order="2">
+                            <div class="release__item-head">
+                                <img class="release__item-image" src=" images/release_products/blue.jpg" alt="blue">
+                                <div class="release__item-hover">
+                                    <a class="release__hover-btn" href="#">More Info</a>
+                                    <a class="release__hover-btn" href="#">Live Demo</a>
                                 </div>
                             </div>
-                            <div class="release-products__item-inner">
-                                <div class="release-products__inner-top">
-                                    <div class="release-products__inner-title">
+                            <div class="release__item-inner">
+                                <div class="release__inner-top">
+                                    <div class="release__inner-title">
                                         Marketify Coffee Shop
                                     </div>
-                                    <div class="release-products__inner-info">
-                                        <div class="release-products__inner-user">
-                                            <a href="#" class="release-products__inner-avatar">
-                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                    <div class="release__inner-info">
+                                        <div class="release__inner-user">
+                                            <a href="#" class="release__inner-avatar">
+                                                <div class="release__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
                                                 </div>
-                                                <span class="release-products__inner-name">EchoTheme</span>
+                                                <span class="release__inner-name">EchoTheme</span>
                                             </a>
-                                            <a href="#" class="release-products__inner-tag">
-                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/psd.svg);">
+                                            <a href="#" class="release__inner-tag">
+                                                <div class="release__tag-image" style="background-image: url(images/featured_products/psd.svg);">
                                                 </div>
                                                 <span>PSD</span>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="release-products__inner-text">
+                                    <div class="release__inner-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="release-products__inner-bottom">
-                                    <div class="release-products__bottom-info">
-                                        <div class="release-products__bottom-left">
-                                            <a href="#" class="release-products__bottom-btn">
+                                <div class="release__inner-bottom">
+                                    <div class="release__bottom-info">
+                                        <div class="release__bottom-left">
+                                            <a href="#" class="release__bottom-btn">
                                                 $18
                                             </a>
-                                            <a href="#" class="release-products__bottom-like">
+                                            <a href="#" class="release__bottom-like">
                                                 48
                                             </a>
                                         </div>
-                                        <a href="#" class="release-products__bottom-cart">
+                                        <a href="#" class="release__bottom-cart">
                                             50
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="release-products__item mix category-html category-new" data-order="3">
-                            <div class="release-products__item-head">
-                                <img class="release-products__item-image" src=" images/release_products/green.jpg" alt="green">
-                                <div class="release-products__item-hover">
-                                    <a class="release-products__hover-btn" href="#">More Info</a>
-                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                        <div class="release__item mix category-html category-new" data-order="3">
+                            <div class="release__item-head">
+                                <img class="release__item-image" src=" images/release_products/green.jpg" alt="green">
+                                <div class="release__item-hover">
+                                    <a class="release__hover-btn" href="#">More Info</a>
+                                    <a class="release__hover-btn" href="#">Live Demo</a>
                                 </div>
                             </div>
-                            <div class="release-products__item-inner">
-                                <div class="release-products__inner-top">
-                                    <div class="release-products__inner-title">
+                            <div class="release__item-inner">
+                                <div class="release__inner-top">
+                                    <div class="release__inner-title">
                                         Bryson - Portfolio Template
                                     </div>
-                                    <div class="release-products__inner-info">
-                                        <div class="release-products__inner-user">
-                                            <a href="#" class="release-products__inner-avatar">
-                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                    <div class="release__inner-info">
+                                        <div class="release__inner-user">
+                                            <a href="#" class="release__inner-avatar">
+                                                <div class="release__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
                                                 </div>
-                                                <span class="release-products__inner-name">Artcorner</span>
+                                                <span class="release__inner-name">Artcorner</span>
                                             </a>
-                                            <a href="#" class="release-products__inner-tag">
-                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/html.png);">
+                                            <a href="#" class="release__inner-tag">
+                                                <div class="release__tag-image" style="background-image: url(images/featured_products/html.png);">
                                                 </div>
                                                 <span>HTML</span>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="release-products__inner-text">
+                                    <div class="release__inner-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="release-products__inner-bottom">
-                                    <div class="release-products__bottom-info">
-                                        <div class="release-products__bottom-left">
-                                            <a href="#" class="release-products__bottom-btn">
+                                <div class="release__inner-bottom">
+                                    <div class="release__bottom-info">
+                                        <div class="release__bottom-left">
+                                            <a href="#" class="release__bottom-btn">
                                                 $10
                                             </a>
-                                            <a href="#" class="release-products__bottom-like">
+                                            <a href="#" class="release__bottom-like">
                                                 56
                                             </a>
-                                            <div class="release-products__bottom-rate">
+                                            <div class="release__bottom-rate">
                                             </div>
                                         </div>
-                                        <a href="#" class="release-products__bottom-cart">
+                                        <a href="#" class="release__bottom-cart">
                                             68
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="release-products__item mix category-plugin category-new" data-order="4">
-                            <div class="release-products__item-head">
-                                <img class="release-products__item-image" src=" images/release_products/green.jpg" alt="green">
-                                <div class="release-products__item-hover">
-                                    <a class="release-products__hover-btn" href="#">More Info</a>
-                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                        <div class="release__item mix category-plugin category-new" data-order="4">
+                            <div class="release__item-head">
+                                <img class="release__item-image" src=" images/release_products/green.jpg" alt="green">
+                                <div class="release__item-hover">
+                                    <a class="release__hover-btn" href="#">More Info</a>
+                                    <a class="release__hover-btn" href="#">Live Demo</a>
                                 </div>
                             </div>
-                            <div class="release-products__item-inner">
-                                <div class="release-products__inner-top">
-                                    <div class="release-products__inner-title">
+                            <div class="release__item-inner">
+                                <div class="release__inner-top">
+                                    <div class="release__inner-title">
                                         E-commerce Shopping Cart
                                     </div>
-                                    <div class="release-products__inner-info">
-                                        <div class="release-products__inner-user">
-                                            <a href="#" class="release-products__inner-avatar">
-                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                    <div class="release__inner-info">
+                                        <div class="release__inner-user">
+                                            <a href="#" class="release__inner-avatar">
+                                                <div class="release__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
                                                 </div>
-                                                <span class="release-products__inner-name">Design-Hub</span>
+                                                <span class="release__inner-name">Design-Hub</span>
                                             </a>
-                                            <a href="#" class="release-products__inner-tag">
-                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
+                                            <a href="#" class="release__inner-tag">
+                                                <div class="release__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
                                                 </div>
                                                 <span>Plugin</span>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="release-products__inner-text">
+                                    <div class="release__inner-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="release-products__inner-bottom">
-                                    <div class="release-products__bottom-info">
-                                        <div class="release-products__bottom-left">
-                                            <a href="#" class="release-products__bottom-btn">
+                                <div class="release__inner-bottom">
+                                    <div class="release__bottom-info">
+                                        <div class="release__bottom-left">
+                                            <a href="#" class="release__bottom-btn">
                                                 $10-50
                                             </a>
-                                            <a href="#" class="release-products__bottom-like">
+                                            <a href="#" class="release__bottom-like">
                                                 90
                                             </a>
-                                            <div class="release-products__bottom-rate">
+                                            <div class="release__bottom-rate">
                                             </div>
                                         </div>
-                                        <a href="#" class="release-products__bottom-cart">45</a>
+                                        <a href="#" class="release__bottom-cart">45</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="release-products__item mix category-psd category-new" data-order="5">
-                            <div class="release-products__item-head">
-                                <img class="release-products__item-image" src=" images/release_products/blue.jpg" alt="blue">
-                                <div class="release-products__item-hover">
-                                    <a class="release-products__hover-btn" href="#">More Info</a>
-                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                        <div class="release__item mix category-psd category-new" data-order="5">
+                            <div class="release__item-head">
+                                <img class="release__item-image" src=" images/release_products/blue.jpg" alt="blue">
+                                <div class="release__item-hover">
+                                    <a class="release__hover-btn" href="#">More Info</a>
+                                    <a class="release__hover-btn" href="#">Live Demo</a>
                                 </div>
                             </div>
-                            <div class="release-products__item-inner">
-                                <div class="release-products__inner-top">
-                                    <div class="release-products__inner-title">
+                            <div class="release__item-inner">
+                                <div class="release__inner-top">
+                                    <div class="release__inner-title">
                                         Marketify Coffee Shop
                                     </div>
-                                    <div class="release-products__inner-info">
-                                        <div class="release-products__inner-user">
-                                            <a href="#" class="release-products__inner-avatar">
-                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                    <div class="release__inner-info">
+                                        <div class="release__inner-user">
+                                            <a href="#" class="release__inner-avatar">
+                                                <div class="release__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
                                                 </div>
-                                                <span class="release-products__inner-name">AazzTech</span>
+                                                <span class="release__inner-name">AazzTech</span>
                                             </a>
-                                            <a href="#" class="release-products__inner-tag">
-                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/psd.svg);">
+                                            <a href="#" class="release__inner-tag">
+                                                <div class="release__tag-image" style="background-image: url(images/featured_products/psd.svg);">
                                                 </div>
                                                 <span>PSD</span>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="release-products__inner-text">
+                                    <div class="release__inner-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="release-products__inner-bottom">
-                                    <div class="release-products__bottom-info">
-                                        <div class="release-products__bottom-left">
-                                            <a href="#" class="release-products__bottom-btn">
+                                <div class="release__inner-bottom">
+                                    <div class="release__bottom-info">
+                                        <div class="release__bottom-left">
+                                            <a href="#" class="release__bottom-btn">
                                                 $10-50
                                             </a>
-                                            <a href="#" class="release-products__bottom-like">
+                                            <a href="#" class="release__bottom-like">
                                                 48
                                             </a>
 
                                         </div>
-                                        <a href="#" class="release-products__bottom-cart">
+                                        <a href="#" class="release__bottom-cart">
                                             50
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="release-products__item mix category-html category-new" data-order="3">
-                            <div class="release-products__item-head">
-                                <img class="release-products__item-image" src=" images/release_products/green.jpg" alt="green">
-                                <div class="release-products__item-hover">
-                                    <a class="release-products__hover-btn" href="#">More Info</a>
-                                    <a class="release-products__hover-btn" href="#">Live Demo</a>
+                        <div class="release__item mix category-html category-new" data-order="3">
+                            <div class="release__item-head">
+                                <img class="release__item-image" src=" images/release_products/green.jpg" alt="green">
+                                <div class="release__item-hover">
+                                    <a class="release__hover-btn" href="#">More Info</a>
+                                    <a class="release__hover-btn" href="#">Live Demo</a>
                                 </div>
                             </div>
-                            <div class="release-products__item-inner">
-                                <div class="release-products__inner-top">
-                                    <div class="release-products__inner-title">
+                            <div class="release__item-inner">
+                                <div class="release__inner-top">
+                                    <div class="release__inner-title">
                                         Bryson - Portfolio Template
                                     </div>
-                                    <div class="release-products__inner-info">
-                                        <div class="release-products__inner-user">
-                                            <a href="#" class="release-products__inner-avatar">
-                                                <div class="release-products__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                    <div class="release__inner-info">
+                                        <div class="release__inner-user">
+                                            <a href="#" class="release__inner-avatar">
+                                                <div class="release__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
                                                 </div>
-                                                <span class="release-products__inner-name">Coder-Lab</span>
+                                                <span class="release__inner-name">Coder-Lab</span>
                                             </a>
-                                            <a href="#" class="release-products__inner-tag">
-                                                <div class="release-products__tag-image" style="background-image: url(images/featured_products/html.png);">
+                                            <a href="#" class="release__inner-tag">
+                                                <div class="release__tag-image" style="background-image: url(images/featured_products/html.png);">
                                                 </div>
                                                 <span>HTML</span>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="release-products__inner-text">
+                                    <div class="release__inner-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="release-products__inner-bottom">
-                                    <div class="release-products__bottom-info">
-                                        <div class="release-products__bottom-left">
-                                            <a href="#" class="release-products__bottom-btn">
+                                <div class="release__inner-bottom">
+                                    <div class="release__bottom-info">
+                                        <div class="release__bottom-left">
+                                            <a href="#" class="release__bottom-btn">
                                                 $10
                                             </a>
-                                            <a href="#" class="release-products__bottom-like">
+                                            <a href="#" class="release__bottom-like">
                                                 56
                                             </a>
-                                            <div class="release-products__bottom-rate">
+                                            <div class="release__bottom-rate">
                                             </div>
                                         </div>
-                                        <a href="#" class="release-products__bottom-cart">
+                                        <a href="#" class="release__bottom-cart">
                                             68
                                         </a>
                                     </div>
@@ -619,8 +1183,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="release-products__button">
-                        <button class="release-products__button-all" type="button" data-filter=".category-new">All New
+                    <div class="release__button">
+                        <button class="release__button-all" type="button" data-filter=".category-new">All New
                             Products</button>
                     </div>
                 </div>
@@ -628,177 +1192,177 @@
             <section class="followers">
                 <div class="container">
                     <div class="followers__slider">
-                        <div class="followers__slider-top">
-                            <div class="followers__slider-title">
+                        <div class="followers__top">
+                            <div class="followers__title">
                                 Your Followers Feed
                             </div>
                         </div>
-                        <div class="followers__slider-items">
-                            <div class="followers__slider-item">
-                                <img class="followers__item-image" src=" images/release_products/green.jpg " alt="green">
-                                <div class="followers__slider-inner">
+                        <div class="followers__items">
+                            <div class="followers__item">
+                                <img class="followers__image" src=" images/release_products/green.jpg " alt="green">
+                                <div class="followers__inner">
                                     <div class="followers__inner-top">
                                         <div class="followers__inner-title">
                                             E-commerce Shopping Cart
                                         </div>
-                                        <div class="followers__inner-info">
-                                            <div class="followers__inner-user">
-                                                <a href="#" class="followers__inner-avatar">
-                                                    <div class="followers__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                        <div class="followers__info">
+                                            <div class="followers__user">
+                                                <a href="#" class="followers__avatar">
+                                                    <div class="followers__img" style="background-image: url(images/release_products/avatar.jpg);">
                                                     </div>
-                                                    <span class="followers__inner-name">Theme-Valley</span>
+                                                    <span class="followers__name">Theme-Valley</span>
                                                 </a>
-                                                <a href="#" class="followers__inner-tag">
+                                                <a href="#" class="followers__tag">
                                                     <div class="followers__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg); ">
                                                     </div>
                                                     <span>Plugin</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="followers__inner-text">
+                                        <div class="followers__text">
                                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                         </div>
                                     </div>
-                                    <div class="followers__inner-bottom">
+                                    <div class="followers__bottom">
                                         <div class="followers__bottom-info">
                                             <div class="followers__bottom-left">
-                                                <a href="#" class="followers__bottom-btn">
+                                                <a href="#" class="followers__btn">
                                                     $20
                                                 </a>
-                                                <a href="#" class="followers__bottom-like">
+                                                <a href="#" class="followers__like">
                                                     90
                                                 </a>
-                                                <div class="followers__bottom-rate"></div>
+                                                <div class="followers__rate"></div>
                                             </div>
-                                            <a href="#" class="followers__bottom-cart">246</a>
+                                            <a href="#" class="followers__cart">246</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="followers__slider-item">
-                                <img class="followers__item-image" src=" images/release_products/blue.jpg " alt="blue">
-                                <div class="followers__slider-inner">
+                            <div class="followers__item">
+                                <img class="followers__image" src=" images/release_products/blue.jpg " alt="blue">
+                                <div class="followers__inner">
                                     <div class="followers__inner-top">
                                         <div class="followers__inner-title">
                                             Marketify Coffee Shop
                                         </div>
-                                        <div class="followers__inner-info">
-                                            <div class="followers__inner-user">
-                                                <a href="#" class="followers__inner-avatar">
-                                                    <div class="followers__inner-img" style="background-image: url(images/release_products/avatar.jpg); ">
+                                        <div class="followers__info">
+                                            <div class="followers__user">
+                                                <a href="#" class="followers__avatar">
+                                                    <div class="followers__img" style="background-image: url(images/release_products/avatar.jpg); ">
                                                     </div>
-                                                    <span class="followers__inner-name">EchoTheme</span>
+                                                    <span class="followers__name">EchoTheme</span>
                                                 </a>
-                                                <a href="#" class="followers__inner-tag">
+                                                <a href="#" class="followers__tag">
                                                     <div class="followers__tag-image" style="background-image: url(images/featured_products/psd.svg); ">
                                                     </div>
                                                     <span>PSD</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="followers__inner-text">
+                                        <div class="followers__text">
                                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                         </div>
                                     </div>
-                                    <div class="followers__inner-bottom">
+                                    <div class="followers__bottom">
                                         <div class="followers__bottom-info">
                                             <div class="followers__bottom-left">
-                                                <a href="#" class="followers__bottom-btn">
+                                                <a href="#" class="followers__btn">
                                                     $18
                                                 </a>
-                                                <a href="#" class="followers__bottom-like">
+                                                <a href="#" class="followers__like">
                                                     48
                                                 </a>
                                             </div>
-                                            <a href="#" class="followers__bottom-cart">
+                                            <a href="#" class="followers__cart">
                                                 50
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="followers__slider-item">
-                                <img class="followers__item-image" src=" images/release_products/green.jpg " alt="green ">
-                                <div class="followers__slider-inner">
+                            <div class="followers__item">
+                                <img class="followers__image" src=" images/release_products/green.jpg " alt="green ">
+                                <div class="followers__inner">
                                     <div class="followers__inner-top">
                                         <div class="followers__inner-title">
                                             Bryson - Portfolio Template
                                         </div>
-                                        <div class="followers__inner-info">
-                                            <div class="followers__inner-user">
-                                                <a href="#" class="followers__inner-avatar">
-                                                    <div class="followers__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                        <div class="followers__info">
+                                            <div class="followers__user">
+                                                <a href="#" class="followers__avatar">
+                                                    <div class="followers__img" style="background-image: url(images/release_products/avatar.jpg);">
                                                     </div>
-                                                    <span class="followers__inner-name">Artcorner</span>
+                                                    <span class="followers__name">Artcorner</span>
                                                 </a>
-                                                <a href="#" class="followers__inner-tag">
+                                                <a href="#" class="followers__tag">
                                                     <div class="followers__tag-image" style="background-image: url(images/featured_products/html.png);">
                                                     </div>
                                                     <span>HTML</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="followers__inner-text">
+                                        <div class="followers__text">
                                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                         </div>
                                     </div>
-                                    <div class="followers__inner-bottom">
+                                    <div class="followers__bottom">
                                         <div class="followers__bottom-info">
                                             <div class="followers__bottom-left">
-                                                <a href="#" class="followers__bottom-btn">
+                                                <a href="#" class="followers__btn">
                                                     $10
                                                 </a>
-                                                <a href="#" class="followers__bottom-like">
+                                                <a href="#" class="followers__like">
                                                     56
                                                 </a>
-                                                <div class="followers__bottom-rate">
+                                                <div class="followers__rate">
                                                 </div>
                                             </div>
-                                            <a href="#" class="followers__bottom-cart">
+                                            <a href="#" class="followers__cart">
                                                 68
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="followers__slider-item">
-                                <img class="followers__item-image" src=" images/release_products/green.jpg " alt="green">
-                                <div class="followers__slider-inner">
+                            <div class="followers__item">
+                                <img class="followers__image" src=" images/release_products/green.jpg " alt="green">
+                                <div class="followers__inner">
                                     <div class="followers__inner-top">
                                         <div class="followers__inner-title">
                                             E-commerce Shopping Cart
                                         </div>
-                                        <div class="followers__inner-info">
-                                            <div class="followers__inner-user">
-                                                <a href="#" class="followers__inner-avatar">
-                                                    <div class="followers__inner-img" style="background-image: url(images/release_products/avatar.jpg);">
+                                        <div class="followers__info">
+                                            <div class="followers__user">
+                                                <a href="#" class="followers__avatar">
+                                                    <div class="followers__img" style="background-image: url(images/release_products/avatar.jpg);">
                                                     </div>
-                                                    <span class="followers__inner-name ">Design-Hub</span>
+                                                    <span class="followers__name ">Design-Hub</span>
                                                 </a>
-                                                <a href="#" class="followers__inner-tag">
+                                                <a href="#" class="followers__tag">
                                                     <div class="followers__tag-image" style="background-image: url(images/featured_products/wordpresssvg.svg);">
                                                     </div>
                                                     <span>Plugin</span>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="followers__inner-text">
+                                        <div class="followers__text">
                                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
                                         </div>
                                     </div>
-                                    <div class="followers__inner-bottom">
+                                    <div class="followers__bottom">
                                         <div class="followers__bottom-info">
                                             <div class="followers__bottom-left">
-                                                <a href="#" class="followers__bottom-btn">
+                                                <a href="#" class="followers__btn">
                                                     $10-50
                                                 </a>
-                                                <a href="#" class="followers__bottom-like">
+                                                <a href="#" class="followers__like">
                                                     90
                                                 </a>
-                                                <div class="followers__bottom-rate">
+                                                <div class="followers__rate">
                                                 </div>
                                             </div>
-                                            <a href="#" class="followers__bottom-cart">45</a>
+                                            <a href="#" class="followers__cart">45</a>
                                         </div>
                                     </div>
                                 </div>
@@ -810,30 +1374,30 @@
             <section class="summary">
                 <div class="container">
                     <div class="summary__items">
-                        <div class="summary__item summary__item--orange">
-                            <div class="summary__img summary__img--orange"></div>
-                            <div class="summary__amount">
+                        <div class="summary__item">
+                            <div class="summary__icon lnr-briefcase"></div>
+                            <div class="summary__amount summary__amount--items">
                                 38,436
                             </div>
                             <div class="summary__text">items for sale</div>
                         </div>
-                        <div class="summary__item summary__item--blue">
-                            <div class="summary__img summary__img--blue"></div>
-                            <div class="summary__amount">
+                        <div class="summary__item">
+                            <div class="summary__icon lnr-cloud-download"></div>
+                            <div class="summary__amount summary__amount--sales">
                                 3,736
                             </div>
                             <div class="summary__text">total sales</div>
                         </div>
-                        <div class="summary__item summary__item--green">
-                            <div class="summary__img summary__img--green"></div>
-                            <div class="summary__amount">
+                        <div class="summary__item">
+                            <div class="summary__icon lnr-smile"></div>
+                            <div class="summary__amount  summary__amount--customers">
                                 2,736
                             </div>
                             <div class="summary__text">happy customers</div>
                         </div>
-                        <div class="summary__item summary__item--red">
-                            <div class="summary__img summary__img--red"></div>
-                            <div class="summary__amount">
+                        <div class="summary__item">
+                            <div class="summary__icon lnr-users"></div>
+                            <div class="summary__amount summary__amount--users">
                                 25,736
                             </div>
                             <div class="summary__text">members</div>
@@ -854,7 +1418,7 @@
                         <div class="reason__items">
                             <div class="reason__item">
                                 <div class="reason__item-number">01</div>
-                                <a class="reason__img reason__img--license" href="#"></a>
+                                <a class="reason__img lnr-license" href="#"></a>
                                 <div class="reason__item-title">
                                     One Time Payment
                                 </div>
@@ -864,7 +1428,7 @@
                             </div>
                             <div class="reason__item">
                                 <div class="reason__item-number">02</div>
-                                <a class="reason__img reason__img--magic-wand" href="#"></a>
+                                <a class="reason__img lnr-magic-wand" href="#"></a>
                                 <div class="reason__item-title">
                                     Quality Products
                                 </div>
@@ -874,7 +1438,7 @@
                             </div>
                             <div class="reason__item ">
                                 <div class="reason__item-number">03</div>
-                                <a class="reason__img reason__img--lock" href="#"></a>
+                                <a class="reason__img lnr-lock" href="#"></a>
                                 <div class="reason__item-title">
                                     100% Secure Payment
                                 </div>
@@ -884,7 +1448,7 @@
                             </div>
                             <div class="reason__item">
                                 <div class="reason__item-number">04</div>
-                                <a class="reason__img reason__img--chart-bars" href="#"></a>
+                                <a class="reason__img lnr-chart-bars" href="#"></a>
                                 <div class="reason__item-title">
                                     Well Organized Code
                                 </div>
@@ -894,7 +1458,7 @@
                             </div>
                             <div class="reason__item">
                                 <div class="reason__item-number">05</div>
-                                <a class="reason__img reason__img--leaf" href="#"></a>
+                                <a class="reason__img lnr-leaf" href="#"></a>
                                 <div class="reason__item-title">
                                     Life Time Free Update
                                 </div>
@@ -904,7 +1468,7 @@
                             </div>
                             <div class="reason__item">
                                 <div class="reason__item-number">06</div>
-                                <a class="reason__img reason__img--phone" href="#"></a>
+                                <a class="reason__img lnr-phone" href="#"></a>
                                 <div class="reason__item-title">
                                     Fast and Friendly Support
                                 </div>
@@ -917,9 +1481,9 @@
                 </div>
             </section>
             <section class="shopping">
-                <div class="shopping__item shopping__item-blue" style="background-image: url(images/shopping/bgblue.png); ">
-                    <div class="shopping__item-icon">
-                        <img class="shopping__icon-img" src="images/shopping/iconsell.svg" alt="sell">
+                <div class="shopping__item" style="background-image: url(images/shopping/bgblue.png); ">
+                    <div class="shopping__icon">
+                        <img class="shopping__img" src="images/shopping/iconsell.svg" alt="sell">
                     </div>
                     <div class="shopping__title">
                         Sell Your Products
@@ -931,9 +1495,9 @@
                         Become an Author
                     </a>
                 </div>
-                <div class="shopping__item shopping__item-violet" style="background-image: url(images/shopping/bgviolet.png);">
-                    <div class="shopping__item-icon">
-                        <img class="shopping__icon-img" src="images/shopping/iconbuy.svg" alt="buy">
+                <div class="shopping__item" style="background-image: url(images/shopping/bgviolet.png);">
+                    <div class="shopping__icon">
+                        <img class="shopping__img" src="images/shopping/iconbuy.svg" alt="buy">
                     </div>
                     <div class="shopping__title">
                         Start Shopping Today
@@ -1139,7 +1703,7 @@
                     </div>
                 </div>
             </section>
-            <section class="join" style="background-image: url(images/join/bc.png);">
+            <section class="join">
                 <div class="join__inner">
                     <div class="join__title">Ready to Join Our Marketplace!</div>
                     <div class="join__text">
@@ -1150,126 +1714,133 @@
                     </a>
                 </div>
             </section>
-        </div>
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="container">
-                    <div class="footer__inner">
-                        <div class="footer__contacts">
-                            <div class="footer__contacts-logo">
-                                <a class="footer__logo" href="#">
-                                    <img src="images/footer/footer_logo.png" alt="logo">
-                                </a>
-                            </div>
-                            <div class="footer__contacts-text">
-                                Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
-                            </div>
-                            <a class="footer__contacts-phone" href="tel:6789-875-2235">Phone: +6789-875-2235</a>
-                            <a class="footer__contacts-email" href="mailto:support@aazztech.com">support@aazztech.com</a>
-                            <a class="footer__contacts-address" href="#">202 New Hampshire Avenue Northwest #100, New
-                                York-2573</a>
-                        </div>
-                        <div class="footer__summary">
-                            <div class="footer__title">
-                                Our Company
-                            </div>
-                            <ul class="footer__content-list">
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">About Us</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">How It Work</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Affiliates</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Testimonials</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Contact Us</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Copyright Notice</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__help">
-                            <div class="footer__title">
-                                Help Support
-                            </div>
-                            <ul class="footer__content-list">
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Support Forum</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Terms & Conditions</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Support Policy</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Refund Policy</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">FAQs</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Buyers Faq</a>
-                                </li>
-                                <li class="footer__list">
-                                    <a class="footer__list-link" href="#">Sellers Faq</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__social">
-                            <div class="footer__title">
-                                Newsletter
-                            </div>
-                            <div class="footer__text">
-                                Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
-                            </div>
+            </div>
 
-                            <form class="footer__form">
-                                <input class="footer__form-input" type="email" placeholder="Enter email" required>
-                                <button class="footer__form-btn" type="submit">Submit</button>
-                            </form>
-                            <ul class="footer__social-contacts">
-                                <li class="footer__social-list">
-                                    <a class="footer__link footer__link--facebook" href="#"></a>
-                                </li>
-                                <li class="footer__social-list">
-                                    <a class="footer__link footer__link--twitter" href="#"></a>
-                                </li>
-                                <li class="footer__social-list">
-                                    <a class="footer__link footer__link--google" href="#"></a>
-                                </li>
-                                <li class="footer__social-list">
-                                    <a class="footer__link footer__link--pinterest" href="#"></a>
-                                </li>
-                                <li class="footer__social-list">
-                                    <a class="footer__link footer__link--linkedin" href="#"></a>
-                                </li>
-                            </ul>
+            <footer class="footer">
+                <div class="footer__content">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <div class="footer__menu footer__menu--contacts">
+                                <div class="footer__contacts-logo">
+                                    <a class="footer__logo" href="#">
+                                        <img src="images/footer/footer_logo.png" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="footer__text">
+                                    Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+                                </div>
+                                <a class="footer__contacts footer__contacts--phone" href="tel:6789-875-2235">Phone:
+                                +6789-875-2235</a>
+                                <a class="footer__contacts footer__contacts--email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+                                <a class="footer__contacts footer__contacts--address" href="#">202 New Hampshire Avenue
+                                Northwest #100, New
+                                York-2573</a>
+                            </div>
+                            <div class="footer__menu footer__menu--summary">
+                                <div class="footer__title">
+                                    Our Company
+                                </div>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">About Us</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">How It Work</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Affiliates</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Testimonials</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Contact Us</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Copyright Notice</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu footer__menu--help">
+                                <div class="footer__title">
+                                    Help Support
+                                </div>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Support Forum</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Terms & Conditions</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Support Policy</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Refund Policy</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">FAQs</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Buyers Faq</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a class="footer__link" href="#">Sellers Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu footer__menu--social">
+                                <div class="footer__title">
+                                    Newsletter
+                                </div>
+                                <div class="footer__text footer__text--social">
+                                    Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+                                </div>
+                                <form class="footer__form">
+                                    <input class="footer__input" type="email" placeholder="Enter email" required>
+                                    <button class="footer__btn" type="submit">Submit</button>
+                                </form>
+                                <ul class="footer__social-list">
+                                    <li class="footer__social-item">
+                                        <a class="footer__social-link footer__social-link--facebook" href="#"></a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a class="footer__social-link footer__social-link--twitter" href="#"></a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a class="footer__social-link footer__social-link--google" href="#"></a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a class="footer__social-link footer__social-link--pinterest" href="#"></a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a class="footer__social-link footer__social-link--linkedin" href="#"></a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a class="footer__social-link footer__social-link--social" href="#">
+                                            <img src="images/footer/social.png" alt="social">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer__copy">
-                <div class="container">
-                    <div class="footer__copy-text">
-                        ©2017 <span class="footer__copy-text footer__copy-text--white">MartPlace</span>. All rights reserved. Created by <span class="footer__copy-text footer__copy-text--white">AazzTech</span>
+                <div class="footer__copy">
+                    <div class="container">
+                        <div class="footer__copy-text">
+                            ©2017 <span class="footer__copy-text footer__copy-text--white">MartPlace</span>. All rights reserved. Created by <span class="footer__copy-text footer__copy-text--white">AazzTech</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-    <script src="js/libs.min.js "></script>
-    <script src="js/main.js "></script>
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+        <script src="js/libs.min.js "></script>
+        <script src="js/main.js "></script>
 </body>
 
 </html>
