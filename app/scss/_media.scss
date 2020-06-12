@@ -676,6 +676,12 @@
         flex-basis: 100%;
         max-width: 100%;
     }
+    .account__reminder {
+        flex-wrap: wrap;
+    }
+    .account__note {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -838,6 +844,12 @@
     }
     .products__search-btn::before {
         font-size: 12px;
+    }
+    .account__top {
+        padding: 50px 10px 24px 10px;
+    }
+    .account__form {
+        padding: 37px 10px 22px;
     }
 }
 

@@ -111,6 +111,11 @@ $(function() {
         $('.filter__sort--list').removeClass('active');
     });
 
+    $('.account__circle').on('click', function() {
+        $('.account__check').toggleClass('active');
+
+    });
+
 
 
 
