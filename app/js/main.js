@@ -50,7 +50,7 @@ $(function() {
         prevArrow: '<button class="slick-arrow slick-prev"></button>',
         nextArrow: '<button class="slick-arrow slick-next"></button>',
         responsive: [{
-                breakpoint: 1131,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                 }

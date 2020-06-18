@@ -1116,9 +1116,9 @@
      &__polygon {
          position: absolute;
          top: -8px;
-         right: -34px;
+         right: 11px;
          z-index: 1;
-         width: 97px;
+         width: 50px;
          height: 95px;
      }
      &__btns {
@@ -1403,6 +1403,7 @@
          border-top-left-radius: 4px;
          border-top-right-radius: 4px;
          max-width: 361px;
+         overflow: hidden;
          margin-top: 2px;
          height: 530px;
          margin-right: 28px;
@@ -3492,6 +3493,7 @@
          font-size: 15px;
          display: flex;
          justify-content: space-between;
+         flex-wrap: wrap;
          align-items: center;
          width: 100%;
      }
@@ -3975,6 +3977,7 @@
          display: flex;
          align-items: center;
          justify-content: space-between;
+         flex-wrap: wrap;
          padding: 32px 80px;
      }
      &__social-list {
@@ -4061,8 +4064,9 @@
      }
      &__details-item {
          border: 1px solid #e8e8e8;
-         padding: 25px 28px 25px 30px;
+         padding: 25px 4px 25px 4px;
          border-top: none;
+         text-align: center;
          flex-grow: 1;
          &.active {
              border-top: 3px solid $blue;
@@ -4553,7 +4557,6 @@
          flex-direction: column;
          border-radius: 4px;
          margin-bottom: 40px;
-         max-height: 880px;
      }
      &__image {
          width: 100%;
@@ -4710,6 +4713,10 @@
          padding: 26px 24px 28px;
          &--color {
              color: $blue;
+             border: none
+         }
+         &--posts {
+             border: none
          }
      }
      &__form {
@@ -4860,8 +4867,9 @@
          position: relative;
      }
      &__banner-img {
-         width: 360px;
-         height: 270px;
+         width: 100%;
+         max-height: 270px;
+         height: 100%;
          border-radius: 4px;
          background-position: center;
          background-repeat: no-repeat;
@@ -4869,9 +4877,9 @@
      }
      &__banner-text {
          position: absolute;
-         z-index: 1;
-         top: 37%;
-         left: 33%;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
          text-align: center;
      }
      &__banner-title {
